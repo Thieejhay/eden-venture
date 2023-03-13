@@ -12,8 +12,8 @@ const Founder = () => {
   return (
     <motion.div className='flex'>
       <div className='bg-[#000000]/90 flex relative h-screen w-screen'>
-        <div className='hidden bg-[url("../assets/bg5.png")] bg-cover opacity-20 h-full w-full lg:flex'></div>
-        <div className='lg:hidden flex bg-[url("../assets/bg10.png")] bg-cover opacity-20 h-full w-full'></div>
+        <div className='hidden bg-[url("../assets/bg5.png")] bg-cover opacity-30 h-full w-full lg:flex'></div>
+        <div className='lg:hidden flex bg-[url("../assets/bg10.png")] bg-cover opacity-40 h-full w-full'></div>
         <div className='flex z-50 absolute'><Header /></div>
         <div className='flex flex-col gap-3 z-50 absolute bottom-6 lg:left-24 left-3'>
           <span className='lg:text-7xl text-3xl font-bold lg:font-extrabold tracking-tight text-[#E2E7E9]/90 uppercase'>developing,</span>

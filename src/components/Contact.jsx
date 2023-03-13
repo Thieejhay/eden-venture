@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { AiOutlineArrowRight } from 'react-icons/ai';
-import { FaLinkedinIn,  FaInstagram } from 'react-icons/fa';
+import { FaLinkedinIn,  FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import Logo from '../assets/new6.png';
 import {Link} from 'react-router-dom';
 // import Logo from '../assets/Picture 1.png'; FaLinkedinIn
@@ -36,8 +36,10 @@ const Contact = () => {
                 <Link to='/profile'><span className='text-[#E2E7E9]/80 text-sm font-normal'>Donate</span></Link>
             </span>
             <div className='flex gap-6 justify-center lg:justify-start'>
-                <span className='p-1 bg-[#E2E7E9]/80 rounded-md'><FaLinkedinIn className='lg:w-4 w-3 h-3 lg:h-4 text-[#000000]/90'/></span>
-                <span className='p-1 bg-[#E2E7E9]/80 rounded-md'><FaInstagram className='lg:w-4 w-3 h-3 lg:h-4 text-[#000000]/90'/></span>
+                <span className='p-1 bg-[#E2E7E9]/80 rounded-md'><a href='https://www.linkedin.com/company/evgnigeria/?viewAsMember=true' rel='noreferrer'><FaLinkedinIn className='lg:w-4 w-3 h-3 lg:h-4 text-[#000000]/90'/></a></span>
+                <span className='p-1 bg-[#E2E7E9]/80 rounded-md'><a href='https//:www.instagram.com/edenventuregroup/?hl=en' rel='noreferrer'><FaInstagram className='lg:w-4 w-3 h-3 lg:h-4 text-[#000000]/90'/></a></span>
+                <span className='p-1 bg-[#E2E7E9]/80 rounded-md'><a href='https://twitter.com/weecreateafrica?s=21&t=DspMjJG2ePwZzOqrDbEHUw' rel='noreferrer'><FaTwitter className='lg:w-4 w-3 h-3 lg:h-4 text-[#000000]/90'/></a></span>
+                <span className='p-1 bg-[#E2E7E9]/80 rounded-md'><a href='https://www.youtube.com/@weecreateafrica?sub_confirmation=1' rel='noreferrer'><FaYoutube className='lg:w-4 w-3 h-3 lg:h-4 text-[#000000]/90'/></a></span>
             </div>
         </div>
         <div className='flex gap-2 items-center mt-3 lg:mt-0'>
