@@ -25,32 +25,32 @@ const Contact = () => {
     };
 
   return (
-    <div className='flex flex-col relative mt-4 bg-[#6100c1]/90'>
-       <div className='flex lg:flex-row flex-col lg:items-center justify-between lg:px-24 lg:pt-8 lg:pb-6 px-6 py-6 pb-4'>
-        <div className='flex flex-col gap-4'>
-            <div className='lg:text-xs text-xxs font-thin text-[#E2E7E9]/80'>
-                © 2022 EDEN VENTURE GROUP.
-            </div>
-            <span><img src={Logo} className='w-16 h-20 opacity-90' alt=''/></span>
-            <span className='flex gap-6 mt-2'>
-                <Link to='/profile'><span className='text-[#E2E7E9]/80 text-sm font-normal'>About Us</span></Link>
-                <span className='text-[#E2E7E9]/80 text-sm font-normal'>Programs</span>
-                <span className='text-[#E2E7E9]/80 text-sm font-normal'>News</span>
-                <span className='text-[#E2E7E9]/80 text-sm font-normal'>Donate</span>
+    <div className='flex flex-col gap-4 relative mt-4 bg-[#6100c1]/90'>
+       <div className='flex lg:flex-row flex-col justify-center items-center lg:justify-between lg:px-24 lg:pt-8 lg:pb-6 px-6 py-6 pb-4'>
+        <div className='flex flex-col gap-3'>
+            <span className='flex justify-center lg:justify-start'><img src={Logo} className='w-16 h-20 opacity-90' alt=''/></span>
+            <span className='flex gap-6'>
+            <Link to='/profile'><span className='text-[#E2E7E9]/80 text-sm font-normal'>About Us</span></Link>
+                <Link to='/profile'><span className='text-[#E2E7E9]/80 text-sm font-normal'>Programs</span></Link>
+                <Link to='/profile'><span className='text-[#E2E7E9]/80 text-sm font-normal'>News</span></Link>
+                <Link to='/profile'><span className='text-[#E2E7E9]/80 text-sm font-normal'>Donate</span></Link>
             </span>
-            <div className='flex gap-6'>
+            <div className='flex gap-6 justify-center lg:justify-start'>
                 <span className='p-1 bg-[#E2E7E9]/80 rounded-md'><FaLinkedinIn className='lg:w-4 w-3 h-3 lg:h-4 text-[#000000]/90'/></span>
-                <span className='p-1 bg-[#E2E7E9]/80'><FaInstagram className='lg:w-4 w-3 h-3 lg:h-4 text-[#000000]/90'/></span>
+                <span className='p-1 bg-[#E2E7E9]/80 rounded-md'><FaInstagram className='lg:w-4 w-3 h-3 lg:h-4 text-[#000000]/90'/></span>
             </div>
         </div>
         <div className='flex gap-2 items-center mt-3 lg:mt-0'>
-            <span className='lg:text-2xl text-base font-light lg:font-normal tracking-wider font-roboto flex text-[#E2E7E9]/90'>Join Our Cause </span>
+            <span className='lg:text-2xl text-base font-light lg:font-normal tracking-wider flex text-[#E2E7E9]/90'>Join Our Cause </span>
             <AiOutlineArrowRight className='w-4 h-4 text-[#E2E7E9]/80'/>
             <div>
                 <span className='border-none text-[#E2E7E9]/90 rounded-3xl uppercase lg:font-medium font-light text-sm lg:text-base cursor-pointer hover:bg-[#E2E7E9]/90  hover:text-[#6100c1]/90 hover:p-2' onClick = {() => {setToggleContact(true)}}>Contact us</span>
             </div>
         </div>
        </div>
+       <div className='lg:text-sm text-xs font-thin text-[#E2E7E9]/80 flex justify-center'>
+                © 2022 EDEN VENTURE GROUP.
+        </div>
 
        {
             toggleContact && (

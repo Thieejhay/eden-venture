@@ -41,7 +41,7 @@ const Values = () => {
 })
 
   return (
-    <div className='flex flex-col font-roboto'>
+    <div className='flex flex-col'>
         <motion.span className='text-4xl font-medium text-[#6100c1]/90 flex justify-center mt-16 mb-8 uppercase' ref={ref} animate={animationss}>Core values</motion.span>
         <motion.div className='flex flex-col lg:flex-row lg:px-16 lg:pb-28 pb-20' animate={animations} ref={ref}>
             <div className='flex flex-col basis-1/4 items-center'>

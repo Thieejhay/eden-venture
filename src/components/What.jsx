@@ -45,7 +45,7 @@ const What = () => {
       </motion.div>
       <motion.div className='flex flex-col gap-2 items-center' animate={animations}>
         <span className='border-b-4 w-10 rounded-md border-[#E2E7E9]/40'></span>
-        <span className='lg:text-xl text-lg font-light text-[#E2E7E9]/40 tracking-widest'>{slider[currentSlide].title}</span>
+        <span className='lg:text-2xl text-lg font-light lg:font-bold tracking-widest uppercase text-[#6100c1]/90'>{slider[currentSlide].title}</span>
       </motion.div>
     </div>
   )
