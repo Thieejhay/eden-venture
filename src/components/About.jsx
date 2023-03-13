@@ -26,7 +26,7 @@ const About = () => {
 })
 
   return (
-    <div className='flex py-8 px-6 lg:px-0 h-screen justify-center'>
+    <div className='flex py-8 px-6 lg:px-0 lg:h-screen h-[54rem] justify-center'>
         <div className='flex lg:gap-16 gap-6 lg:flex-row flex-col' >
             <img src={Aboutt} alt='' className='h-[27rem] lg:h-full lg:w-full w-screen'/>
             <motion.div className='flex flex-col lg:gap-8 gap-6 lg:mt-24' animate={animations} ref={ref}>

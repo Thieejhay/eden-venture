@@ -2,6 +2,7 @@ import React, { useEffect, useRef} from 'react';
 import { motion, useAnimation, useInView } from 'framer-motion';
 import { BiNetworkChart, BiVideoRecording, BiHealth } from 'react-icons/bi';
 import { GiBookshelf } from 'react-icons/gi';
+import { FaUsers } from 'react-icons/fa';
 
 
 const Solution = () => {
@@ -44,7 +45,7 @@ const Solution = () => {
             </span>
           </motion.div>
           <motion.div className='flex  lg:w-[50rem] h-fit gap-4' ref={ref} animate={animations}>
-          <span className='w-[20%] flex justify-end'><GiBookshelf className='w-16 h-20 text-[#6100c1]/80'/></span>
+          <span className='w-[20%] flex justify-end'><FaUsers className='w-16 h-20 text-[#6100c1]/80'/></span>
             <span className='flex flex-col gap-3 mt-4 w-[80%]'>
               <span className='text-xl font-semibold text-[#1A1B1F]/90 tracking-wider uppercase'>consulting</span>
               <span className='text-lg font-light text-[#1A1B1F]/60'>Creating unparalleled value for our teeming clients </span>

@@ -23,10 +23,10 @@ const Header = () => {
             </Link>
             <div className='flex'>
               <div className='hidden lg:flex justify-center items-center lg:gap-12 gap-3 text-white'>
-                <Link to='/profile'><span className= ' font-light uppercase lg:text-sm text-xs hover:text-[#6100c1] cursor-pointer'>About us</span></Link>
-                <span className='font-light uppercase lg:text-sm text-xs hover:text-[#6100c1] cursor-pointer'>Programs</span>
-                <span className='font-light uppercase lg:text-sm text-xs hover:text-[#6100c1] cursor-pointer'>News</span>
-                <span className='font-light uppercase lg:text-sm text-xs hover:text-[#6100c1] cursor-pointer'>Donate</span>
+                <Link to='/profile'><span className= ' font-light uppercase lg:text-sm text-xs hover:text-[#6100c1] cursor-pointer text-[#E2E7E9]/90'>About us</span></Link>
+                <span className='font-light uppercase lg:text-sm text-xs hover:text-[#6100c1] cursor-pointer text-[#E2E7E9]/90'>Programs</span>
+                <span className='font-light uppercase lg:text-sm text-xs hover:text-[#6100c1] cursor-pointer text-[#E2E7E9]/90'>News</span>
+                <span className='font-light uppercase lg:text-sm text-xs hover:text-[#6100c1] cursor-pointer text-[#E2E7E9]/90'>Donate</span>
               </div>
               <div className='flex justify-center items-center'>
                 <AiOutlineMenu className='lg:hidden' color='#6100c1' size={26} onClick = {() => {setToggleMenu(true)}}/>
@@ -35,7 +35,7 @@ const Header = () => {
 
             {
               toggleMenu && (
-                <motion.div className='flex items-end flex-col gap-12 text-start z-50 justify-start bg-white p-8 right-0 fixed w-[50%] bottom-0 lg:hidden h-screen' initial={{ x:'100vw'}}
+                <motion.div className='flex items-end flex-col gap-12 text-start justify-start bg-white z-auto p-8 right-0 fixed w-[50%] bottom-0 lg:hidden h-screen' initial={{ x:'100vw'}}
                 animate={{ x: 0}} transition={{type: 'spring', duration: 2, bounce: 0.3}}>
                   <AiOutlineClose color='#6100c1' size={26} onClick = {() => {setToggleMenu(false)}}/>
                   <Link to='/profile'><span onClick = {() => {setToggleMenu(false)}} className='text-[#6100c1]'>About us</span></Link> 
