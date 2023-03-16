@@ -20,7 +20,7 @@ const imageSlide2 = [
         title: 'Connect.  Innovate.  Impact',
     },
     {
-        url: 'https://drive.google.com/uc?export=download&id=1TXWMvazeewDOKYdVbwxFLywjt7xwRpNV',
+        url: 'https://drive.google.com/uc?export=download&id=1hrgz2VEINWKY1CAlDqnXJUY14x_jgHHd',
         url2: 'emp.png',
         title: '',
     }

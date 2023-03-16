@@ -20,7 +20,7 @@ const Hero = () => {
       }else{
         setCurrentSlide(currentSlide+1)
       }
-    },3500)
+    },4000)
     return () => clearTimeout(timer)
   }, [currentSlide])
 
@@ -29,14 +29,14 @@ const Hero = () => {
     backgroundSize: 'cover',
     height: '100vh',
     width: '100vw',
-    transition: 'background 0.5s ease-in',
+    transition: 'background 0.3s ease-in',
   }
   const bgImageStyle2 = {
     backgroundImage: `url(${imageSlide2[currentSlide].url})`,
     backgroundSize: 'cover',
     height: '100vh',
     width: '100vw',
-    transition: 'background 0.5s ease-in',
+    transition: 'background 0.3s ease-in',
   }
   const goToNext = (currentSlide)=>{
     setCurrentSlide(currentSlide)
