@@ -11,7 +11,7 @@ import What from "./What";
 
 const Home = () => {
   return (
-    <div className='opacity-100'>
+    <div className='opacity-100 overflow-x-hidden'>
       {/* <Header /> */}
       <Hero />
       <What />

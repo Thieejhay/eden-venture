@@ -25,7 +25,7 @@ const Contact = () => {
     };
 
   return (
-    <div className='flex flex-col gap-4 relative mt-4 bg-[#6100c1]/90'>
+    <div className='flex flex-col gap-4 relative mt-4 bg-[#6100c1]/90 font-barlow'>
        <div className='flex lg:flex-row flex-col justify-center items-center lg:justify-between lg:px-24 lg:pt-8 lg:pb-6 px-6 py-6 pb-4'>
         <div className='flex flex-col gap-3'>
             <span className='flex justify-center lg:justify-start'><img src={Logo} className='w-16 h-20 opacity-90' alt=''/></span>

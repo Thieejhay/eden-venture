@@ -11,7 +11,7 @@ const Header = () => {
   const[toggleMenu, setToggleMenu] = useState(false)
 
   return (
-    <div className={`flex lg:pr-32 lg:pl-24 pl-6 pr-8 lg:py-2 py-4 bg-transparent border-none justify-between w-screen z-50 sticky top-0 transition-all duration-500 ${scrollDirection === "down" ? "-top-32" : "top-0"}`}>
+    <div className={`flex lg:pr-32 lg:pl-24 pl-6 pr-8 lg:py-2 py-4 bg-transparent border-none justify-between font-barlow w-screen z-50 sticky top-0 transition-all duration-500 ${scrollDirection === "down" ? "-top-32" : "top-0"}`}>
             <Link to='/'>
               <div className='flex lg:gap-4 gap-3 justify-center items-center py-2'>
                 <img src={Logo} className='lg:w-16 w-12 h-16 lg:h-20 opacity-90' alt=''/>
