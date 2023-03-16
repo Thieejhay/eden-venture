@@ -27,7 +27,7 @@ const Hero = () => {
   const bgImageStyle = {
     backgroundImage: `url(${imageSlide[currentSlide].url})`,
     backgroundSize: 'cover',
-    height: '45rem',
+    height: '100vh',
     width: '100vw',
     transition: 'background 0.5s ease-in',
   }
@@ -47,7 +47,7 @@ const Hero = () => {
 
 
   return (
-    <motion.div className="flex text-white relative h-screen w-screen bg-[#000000]/90 font-barlow flex-col">
+    <motion.div className="flex text-white relative h-screen w-screen font-barlow flex-col">
       <div style={bgImageStyle} className='hidden lg:flex'></div>
       <div style={bgImageStyle2} className='lg:hidden flex'></div>
       <div className='flex z-50 absolute'><Header /></div>
@@ -55,7 +55,7 @@ const Hero = () => {
         <img src={imageSlide[currentSlide].url2} alt='' className='lg:w-[26rem] lg:h-52 w-[22rem] h-32'/>
       </div>
       {/* <span className='lg:text-7xl text-3xl lg:w-[60rem] w-screen px-3 font-semibold flex z-10 absolute lg:top-[75%] top-[70%] lg:left-[55%] left-[53%] -translate-x-2/4 -translate-y-2/4 drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]'>{imageSlide[currentSlide].title}</span> */}
-      <span className='lg:text-7xl text-3xl w-screen px-3 font-semibold flex items-center justify-center drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] -mt-72 lg:-mt-72'>{imageSlide[currentSlide].title}</span>
+      <span className='lg:text-7xl text-3xl w-screen px-3 font-semibold flex items-center justify-center drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] -mt-72 lg:-mt-60'>{imageSlide[currentSlide].title}</span>
       <span className='flex lg:z-50 z-10 absolute top-[85%] left-[50%] -translate-x-2/4 -translate-y-2/4'>
         {
           imageSlide.map((imageSlide, currentSlide)=>(
