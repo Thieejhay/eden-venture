@@ -20,7 +20,7 @@ const Hero = () => {
       }else{
         setCurrentSlide(currentSlide+1)
       }
-    },5000)
+    },3500)
     return () => clearTimeout(timer)
   }, [currentSlide])
 
@@ -28,13 +28,15 @@ const Hero = () => {
     backgroundImage: `url(${imageSlide[currentSlide].url})`,
     backgroundSize: 'cover',
     height: '45rem',
-    width: '100vw'
+    width: '100vw',
+    transition: 'background 0.5s ease-in',
   }
   const bgImageStyle2 = {
     backgroundImage: `url(${imageSlide2[currentSlide].url})`,
     backgroundSize: 'cover',
     height: '100vh',
-    width: '100vw'
+    width: '100vw',
+    transition: 'background 0.5s ease-in',
   }
   const goToNext = (currentSlide)=>{
     setCurrentSlide(currentSlide)
@@ -45,7 +47,7 @@ const Hero = () => {
 
 
   return (
-    <motion.div className="flex text-white relative h-full w-screen bg-[#000000]/90">
+    <motion.div className="flex text-white relative h-full w-screen bg-[#000000]/90 font-barlow">
       <div style={bgImageStyle} className='hidden lg:flex'></div>
       <div style={bgImageStyle2} className='lg:hidden flex'></div>
       <div className='flex z-50 absolute'><Header /></div>

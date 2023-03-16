@@ -38,7 +38,7 @@ const What = () => {
 })
 
   return (
-    <div className='flex flex-col lg:gap-10 gap-5 text-white lg:h-[22rem] h-[11rem] bg-[#000000]/90 items-center justify-center py-24 px-3 lg:p-0'>
+    <div className='flex flex-col lg:gap-10 gap-5 text-white lg:h-[22rem] h-[11rem] bg-[#000000]/90 items-center justify-center py-24 px-3 lg:p-0 font-barlow'>
       <motion.div className='flex flex-col gap-4' animate={animations} ref={ref}>
         <span className='lg:text-xl text-xs font-normal lg:font-semibold text-[#E2E7E9]/90 justify-center flex lg:tracking-widest tracking-normal'>{slider[currentSlide].content1}</span>
         <span className='lg:text-xl text-xs font-normal lg:font-semibold text-[#E2E7E9]/90 justify-center flex lg:tracking-widest tracking-normal'>{slider[currentSlide].content2}</span>

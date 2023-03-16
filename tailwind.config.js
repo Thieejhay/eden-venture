@@ -10,7 +10,7 @@ module.exports = {
         widestt: '0.2em'
       },
       fontFamily: {
-        'roboto': ['Roboto Slab', 'serif']
+        'barlow': ['Barlow', 'sans-serif']
       },
       fontSize: {
         xxs: '0.5em'

@@ -25,7 +25,7 @@ import Logo21 from '../assets/logo21.png';
 
 const Universe = () => {
   return (
-    <div className='flex lg:px-32 lg:py-24 px-6 py-12 flex-col lg:gap-8 gap-0'>
+    <div className='flex lg:px-32 lg:py-24 px-6 py-12 flex-col lg:gap-8 gap-0 font-barlow'>
       <div className='lg:text-3xl text-center text-2xl font-semibold lg:font-bold tracking-tight uppercase text-[#6100c1]/80 flex justify-center items-center mb-4'>Brands we've done great work with</div>
       <div className='lg:flex hidden justify-center items-center lg:gap-24 gap-4'>
         <div className='lg:w-[8rem] lg:h-[8rem] w-24 h-24 flex justify-center items-center'><img src={Logo2} alt='' className='lg:w-[4rem] w-12 lg:h-[4rem] h-12 flex items-center'/></div>

@@ -27,7 +27,7 @@ const Solution = () => {
 })
 
   return (
-    <div className='flex justify-center lg:py-24 py-16 flex-col lg:gap-12 gap-6 w-screen'>
+    <div className='flex justify-center lg:py-24 py-16 flex-col lg:gap-12 gap-6 w-screen font-barlow'>
         <span className='lg:text-5xl text-4xl font-semibold lg:font-bold tracking-tight uppercase flex items-center justify-center text-[#6100c1]/80'>our solutions</span>
         <div className='flex flex-col gap-10 justify-center items-center lg:px-0 px-6' ref={ref}>
           <motion.div className='flex  lg:w-[50rem] h-fit gap-4' ref={ref} animate={animations}>
