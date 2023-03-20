@@ -11,7 +11,7 @@ import { FaLinkedinIn} from 'react-icons/fa';
 const Partner = () => {
   return (
     <div className='relative py-24 bg-[#000000]/90 lg:h-[33rem] h-[28rem] font-barlow'>
-        <div className='lg:text-5xl text-3xl font-semibold lg:font-bold top-12 absolute lg:left-[50%] left-[40%] -translate-x-1/3 tracking-tight uppercase text-[#E2E7E9]/90'>Our Partners</div>
+        <div className='lg:text-5xl text-3xl font-semibold lg:font-bold top-12 absolute lg:left-[50%] left-[40%] -translate-x-1/3 tracking-tight uppercase text-[#E2E7E9]/90'>Our Community</div>
         <div className='absolute cursor-pointer z-10 lg:right-24 right-0 lg:top-[60%] top-[40%] image-swiper-button-next'>
             <IoIosArrowForward size={50} className='text-[#6100c1]/80'/>
         </div>

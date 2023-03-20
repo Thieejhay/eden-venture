@@ -10,7 +10,7 @@ const imageSlide2 = [
         title: 'Connect.  Innovate.  Impact',
     },
     {
-        url: 'https://drive.google.com/uc?export=download&id=1-Hky294oDGJVYhnu0d2RRaoRjxWVFTAb',
+        url: 'https://drive.google.com/uc?export=download&id=1L-yGSY4ODDuqnKPjeHMmpnzQcIlIAgnZ',
         url2: 'emp.png',
         title: 'Connect.  Innovate.  Impact',
     },
@@ -20,7 +20,7 @@ const imageSlide2 = [
         title: 'Connect.  Innovate.  Impact',
     },
     {
-        url: 'https://drive.google.com/uc?export=download&id=1hrgz2VEINWKY1CAlDqnXJUY14x_jgHHd',
+        url: 'https://drive.google.com/uc?export=download&id=1EQYmrU1HkvOyENldyUsPgXIWd_kUxbpR',
         url2: 'emp.png',
         title: '',
     }

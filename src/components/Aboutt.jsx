@@ -25,8 +25,9 @@ const Aboutt = () => {
 
 
   return (
-    <div className='flex justify-center lg:py-32 lg:px-0 px-6 py-16 bg-[#6100c1]/80 font-barlow'>
-        <motion.div className='text-center flex w-[55rem] text-3xl font-semibold text-[#E2E7E9]/90' animate={animations} ref={ref}>We are a social enterprise curating, developing and positioning social enterpreneurs fro scale. We belive everyone deserves an opportunity to create meaningful impact in the world abd we provide people, businesses and institutions with the right skills, support, and the network to do so.</motion.div>
+    <div className='flex justify-center lg:py-32 lg:px-0 px-6 py-16 bg-[#6100c1]/60 font-barlow'>
+        <motion.div className='text-center flex w-[55rem] lg:text-3xl text-xl font-medium lg:font-semibold text-[#E2E7E9]/90' animate={animations} ref={ref}>We are a collective of social entrepreneurs collaborating to develop, support and empower underserved and underrepresented demographics in emerging economies, with a core focus on Africa. We believe everyone deserves an opportunity to create meaningful impact in the world and we provide people, businesses and institutions with the right skills, support, and the networks to do so.
+        </motion.div>
     </div>
   )
 }

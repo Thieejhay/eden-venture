@@ -17,7 +17,7 @@ const What = () => {
       }else{
         setCurrentSlide(currentSlide+1)
       }
-    },3000)
+    },5000)
     return () => clearTimeout(timer)
   }, [currentSlide]);
 
@@ -40,12 +40,12 @@ const What = () => {
   return (
     <div className='flex flex-col lg:gap-10 gap-5 text-white lg:h-[22rem] h-[11rem] bg-[#000000]/90 items-center justify-center py-24 px-3 lg:p-0 font-barlow'>
       <motion.div className='flex flex-col gap-4' animate={animations} ref={ref}>
-        <span className='lg:text-xl text-xs font-normal lg:font-semibold text-[#E2E7E9]/90 justify-center flex lg:tracking-widest tracking-normal'>{slider[currentSlide].content1}</span>
-        <span className='lg:text-xl text-xs font-normal lg:font-semibold text-[#E2E7E9]/90 justify-center flex lg:tracking-widest tracking-normal'>{slider[currentSlide].content2}</span>
+        <span className='lg:text-xl text-xs font-normal lg:font-semibold text-[#E2E7E9]/80 justify-center flex lg:tracking-widest tracking-normal'>{slider[currentSlide].content1}</span>
+        <span className='lg:text-xl text-xs font-normal lg:font-semibold text-[#E2E7E9]/80 justify-center flex lg:tracking-widest tracking-normal'>{slider[currentSlide].content2}</span>
       </motion.div>
       <motion.div className='flex flex-col gap-2 items-center' animate={animations}>
         <span className='border-b-4 w-10 rounded-md border-[#E2E7E9]/40'></span>
-        <span className='lg:text-2xl text-lg font-light lg:font-bold tracking-widest uppercase text-[#6100c1]/90'>{slider[currentSlide].title}</span>
+        <span className='lg:text-2xl text-lg font-light lg:font-bold tracking-widest uppercase text-[#E2E7E9]'>{slider[currentSlide].title}</span>
       </motion.div>
     </div>
   )

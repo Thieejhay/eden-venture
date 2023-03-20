@@ -21,13 +21,13 @@ const Create = () => {
         <span className='text-3xl font-medium text-[#E2E7E9]/90 flex justify-center mt-16 uppercase'>Impact</span>
         <div className='flex mt-8 lg:px-16 gap-3 lg:gap-0'>
             <div className='flex lg:basis-2/3 basis-1/3 justify-center'>
-                <Counter target={150} title='Events' duration={3} />
+                <Counter target={55} title='Events' duration={3} />
             </div>
             <div className='flex lg:basis-2/3 basis-1/3 justify-center'>
-                <Counter target={1000} title='People reached' duration={5} />
+                <Counter target={100000} title='People reached' duration={5} />
             </div>
             <div className='flex lg:basis-2/3 basis-1/3 justify-center'>
-                <Counter target={200} title='Communities engaged with' duration={5} />
+                <Counter target={120} title='Communities engaged' duration={5} />
             </div>
         </div>
     </div>

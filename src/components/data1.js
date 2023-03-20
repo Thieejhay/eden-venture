@@ -24,14 +24,14 @@ import Otu from '../assets/profile/Otu.png';
 
 export const slider = [
     {
-        content1: 'Eden Venture Group(EVG) is a venture firm designed by',
+        content1: 'Eden Venture Group (EVG) is a venture firm designed by',
         content2: 'women to innovate for behavioural change and social impact.',
         title: 'What we do',
     },
     {
-        content1: '"It is a time to re-imagine modern-day Africa;',
-        content2: 'one where we have our very own garden of Eden"',
-        title: 'FIFEHAN OSIKANLU, FOUNDER',
+        content1: `"I DON'T WANT TO LIVE IN A WORLD THAT DOESN'T LET`,
+        content2: 'THE OTHER HALF OF US DO WHAT WE OUGHT"',
+        title: 'melina gates',
     }
 
 ]

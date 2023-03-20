@@ -34,7 +34,8 @@ const Solution = () => {
             <span className='w-[20%] flex justify-end'><BiNetworkChart className='w-16 h-20 text-[#6100c1]/80'/></span>
             <span className='flex flex-col gap-3 mt-4 w-[80%]'>
               <span className='text-xl font-semibold text-[#1A1B1F]/90 tracking-wider uppercase'>Networks</span>
-              <span className='text-lg font-light text-[#1A1B1F]/60'>Our network is a collective of multi-sectorial stakeholder who, without our intervention, would work in siols. We host the platform for these stakeholders to collaborate, exchange resources and ensure impact is scaled</span>
+              <span className='text-lg font-light text-[#1A1B1F]/60'>Our network is a collective of multi-sectorial stakeholders who, without our intervention, would work in silos. We host the platform for these stakeholders to collaborate, exchange resources and ensure impact is scaled.
+              </span>
             </span>
           </motion.div>
           <motion.div className='flex  lg:w-[50rem] h-fit gap-4' ref={ref} animate={animations}>
@@ -47,21 +48,21 @@ const Solution = () => {
           <motion.div className='flex  lg:w-[50rem] h-fit gap-4' ref={ref} animate={animations}>
           <span className='w-[20%] flex justify-end'><FaUsers className='w-16 h-20 text-[#6100c1]/80'/></span>
             <span className='flex flex-col gap-3 mt-4 w-[80%]'>
-              <span className='text-xl font-semibold text-[#1A1B1F]/90 tracking-wider uppercase'>consulting</span>
+              <span className='text-xl font-semibold text-[#1A1B1F]/90 tracking-wider uppercase'>Consulting</span>
               <span className='text-lg font-light text-[#1A1B1F]/60'>Creating unparalleled value for our teeming clients </span>
             </span>
           </motion.div>
           <motion.div className='flex  lg:w-[50rem] h-fit gap-4' ref={ref} animate={animations}>
           <span className='w-[20%] flex justify-end'><BiHealth className='w-16 h-20 text-[#6100c1]/80'/></span>
             <span className='flex flex-col gap-3 mt-4 w-[80%]'>
-              <span className='text-xl font-semibold text-[#1A1B1F]/90 tracking-wider uppercase'>health & wellness</span>
+              <span className='text-xl font-semibold text-[#1A1B1F]/90 tracking-wider uppercase'>Health & Wellness</span>
               <span className='text-lg font-light text-[#1A1B1F]/60'>We are building a tech-enabled platform that fosters the wellbeing of creatives and their allies</span>
             </span>
           </motion.div>
           <motion.div className='flex  lg:w-[50rem] h-fit gap-4' ref={ref} animate={animations}>
           <span className='w-[20%] flex justify-end'><BiVideoRecording className='w-16 h-20 text-[#6100c1]/80'/></span>
             <span className='flex flex-col gap-3 mt-4 w-[80%]'>
-              <span className='text-xl font-semibold text-[#1A1B1F]/90 tracking-wider uppercase'>media & entertainment</span>
+              <span className='text-xl font-semibold text-[#1A1B1F]/90 tracking-wider uppercase'>Media & Entertainment</span>
               <span className='text-lg font-light text-[#1A1B1F]/60'>We are creating and amplifying compelling, authentic and mindset-shifting narratives,bypassing the status quo and redefining the future of storytelling in Africa</span>
             </span>
           </motion.div>

@@ -32,7 +32,8 @@ const About = () => {
             <motion.div className='flex flex-col lg:gap-8 gap-6 lg:mt-24' animate={animations} ref={ref}>
                 <span className='text-4xl font-bold tracking-wider'>About Us</span>
                 <span className='lg:text-base text-sm font-light tracking-wide lg:w-[28rem] lg:mb-0 mb-4'>
-                    Eden Venture Group(EVG) is a venture firm designed by women to innovate for behavioural change and social impact. We are a social enterprise curating,developing, and postioning social entrepreneurs froe scale. We believe everyone deserves an oppurtunity to create a meaningful impact in the world and we provide people,businesses and institutions with the right skills,support and networks to do so.
+                Eden Venture Group (EVG) is a venture firm designed by women to innovate for behavioral change and social impact. 
+                We are a collective of social entrepreneurs collaborating to develop, support and empower underserved and underrepresented demographics in emerging economies, with a core focus on Africa. We believe everyone deserves an opportunity to create meaningful impact in the world and we provide people, businesses and institutions with the right skills, support, and the networks to do so.
                 </span>
                 <Link to='/profile'><span className='px-6 py-3 border-none rounded-md bg-[#6100c1] w-32 lg:mt-8 text-[#E2E7E9]/90'>Read More..</span></Link>
             </motion.div>
