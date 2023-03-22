@@ -10,17 +10,17 @@ import { FaLinkedinIn} from 'react-icons/fa';
 
 const Partner = () => {
   return (
-    <div className='relative py-24 bg-[#000000]/90 lg:h-[33rem] h-[28rem] font-barlow'>
+    <div className='relative py-24 bg-[#000000]/70 lg:h-[33rem] h-[28rem] font-barlow'>
         <div className='lg:text-5xl text-3xl font-semibold lg:font-bold top-12 absolute lg:left-[50%] left-[40%] -translate-x-1/3 tracking-tight uppercase text-[#E2E7E9]/90'>Our Community</div>
-        <div className='absolute cursor-pointer z-10 lg:right-24 right-0 lg:top-[60%] top-[40%] image-swiper-button-next'>
-            <IoIosArrowForward size={50} className='text-[#6100c1]/80'/>
+        <div className='absolute cursor-pointer z-10 lg:right-32 right-0 lg:top-[50%] top-[40%] image-swiper-button-next'>
+            <IoIosArrowForward size={50} className='text-[#6100c1]'/>
         </div>
-        <div className='absolute cursor-pointer z-10 lg:left-24 left-0 lg:top-[60%] top-[40%] image-swiper-button-prev'>
-            <IoIosArrowBack size={50} className='text-[#6100c1]/80'/>
+        <div className='absolute cursor-pointer z-10 lg:left-32 left-0 lg:top-[50%] top-[40%] image-swiper-button-prev'>
+            <IoIosArrowBack size={50} className='text-[#6100c1]'/>
         </div>
         <Swiper
         breakpoints={{
-            640: {slidesPerView: 3},
+            640: {slidesPerView: 4},
             0: {slidesPerView: 3}
         }}
         modules={[Pagination, Navigation]}
@@ -30,13 +30,13 @@ const Partner = () => {
             disabledClass: 'swiper-button-disabled'
         }}
         
-        slidesPerView={3}
+        slidesPerView={4}
         spaceBetween={20}
-        slidesPerGroup={3}
+        slidesPerGroup={4}
         loop={true} className='lg:w-[70%] w-[80%] h-[21rem] mySwiper mt-16'>
             { swiper.map((swiper, i) => (
                 <SwiperSlide className='flex flex-col relative overflow-hidden box-border' key={i}>
-                    <div className='flex'><img src={swiper.img} alt='' className='w-full lg:h-60 h-24 rounded-3xl box-border'/></div>
+                    <div className='flex'><img src={swiper.img} alt='' className='w-full lg:h-56 h-24 rounded-3xl box-border'/></div>
                     <div className='flex flex-col mt-4'>
                         <span className='lg:text-lg text-base  font-lightlg:font-normal text-[#E2E7E9]/90 uppercase'>{swiper.name}</span>
                         <span className='flex flex-col gap-2'>

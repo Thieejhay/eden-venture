@@ -60,38 +60,38 @@ export const swiper = [
     },
     {
         id: 2,
-        name: 'Otu Hughes',
-        title: 'Advisory parther',
-        linkdn: 'https://www.linkedin.com/in/otu-hughes-037232/',
-        img: Otu
+        name: 'Funmbi Ogunbanwo',
+        title: 'project partner',
+        linkdn: 'https://www.linkedin.com/in/funmbiogunbanwo/',
+        img: Funmbi
     },
     {
         id: 3,
+        name: 'Anita Udegbue',
+        title: 'Project Manager',
+        linkdn: 'https://www.linkedin.com/in/anita-udegbue/',
+        img: Anita
+    },
+    {
+        id: 4,
         name: 'Habeeb Alebiosu',
         title: 'Advisory Partner',
         linkdn: 'https://www.linkedin.com/in/habeeb-alebiosu-262486a/',
         img: Habeeb
     },
     {
-        id: 4,
+        id: 5,
         name: 'Eniola Mafe',
         title: 'Advisory Partner',
         linkdn: 'https://www.linkedin.com/in/eniolamafe/',
         img: Eniola
     },
     {
-        id: 5,
+        id: 6,
         name: 'Titi Ogufere',
         title: 'Project Partner',
         linkdn: 'https://www.linkedin.com/in/titi-sandra-ogufere-7b11493/',
         img: Titi
-    },
-    {
-        id: 6,
-        name: 'Kamal Ajiboye',
-        title: 'project partner',
-        linkdn: 'https://www.linkedin.com/in/kamal-ajiboye-10990848/',
-        img: Kamal
     },
     {
         id: 7,
@@ -137,10 +137,10 @@ export const swiper = [
     },
     {
         id: 13,
-        name: 'Funmbi Ogunbanwo',
-        title: 'project partner',
-        linkdn: 'https://www.linkedin.com/in/funmbiogunbanwo/',
-        img: Funmbi
+        name: 'Otu Hughes',
+        title: 'Advisory parther',
+        linkdn: 'https://www.linkedin.com/in/otu-hughes-037232/',
+        img: Otu
     },
     {
         id: 14,
@@ -186,10 +186,10 @@ export const swiper = [
     },
     {
         id: 20,
-        name: 'Anita Udegbue',
-        title: 'Project Manager',
-        linkdn: 'https://www.linkedin.com/in/anita-udegbue/',
-        img: Anita
+        name: 'Kamal Ajiboye',
+        title: 'project partner',
+        linkdn: 'https://www.linkedin.com/in/kamal-ajiboye-10990848/',
+        img: Kamal
     },
 ]
 

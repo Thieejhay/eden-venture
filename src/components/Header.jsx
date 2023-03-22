@@ -39,7 +39,7 @@ const Header = () => {
                 animate={{ x: 0}} transition={{type: 'spring', duration: 2, bounce: 0.3}}>
                   <AiOutlineClose color='#6100c1' size={26} onClick = {() => {setToggleMenu(false)}}/>
                   <Link to='/profile'><span onClick = {() => {setToggleMenu(false)}} className='text-[#6100c1]'>About us</span></Link> 
-                  <span onClick = {() => {setToggleMenu(false)}} className='text-[#6100c1]'>Programs</span>
+                  <span onClick = {() => {setToggleMenu(false)}} className='text-[#6100c1]'>Initiatives</span>
                   <span onClick = {() => {setToggleMenu(false)}} className='text-[#6100c1]'>News</span>
                   <span onClick = {() => {setToggleMenu(false)}} className='text-[#6100c1]'>Donate</span>
                 </motion.div>

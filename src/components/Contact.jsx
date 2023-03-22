@@ -43,7 +43,7 @@ const Contact = () => {
             </div>
         </div>
         <div className='flex gap-2 items-center mt-3 lg:mt-0'>
-            <span className='lg:text-2xl text-base font-light lg:font-normal tracking-wider flex text-[#E2E7E9]/90'>Join Our Cause </span>
+            <span className='lg:text-2xl text-base font-light lg:font-normal tracking-wider flex text-[#E2E7E9]/90'>Join Us </span>
             <AiOutlineArrowRight className='w-4 h-4 text-[#E2E7E9]/80'/>
             <div>
                 <span className='border-none text-[#E2E7E9]/90 rounded-3xl uppercase lg:font-medium font-light text-sm lg:text-base cursor-pointer hover:bg-[#E2E7E9]/90  hover:text-[#6100c1]/90 hover:p-2' onClick = {() => {setToggleContact(true)}}>Contact us</span>
