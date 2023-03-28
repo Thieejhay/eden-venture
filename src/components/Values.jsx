@@ -1,9 +1,12 @@
 import React, { useEffect, useRef} from 'react';
 import { motion, useAnimation, useInView } from 'framer-motion';
-import Human from '../assets/human.png'
-import Social from '../assets/social.png'
-import Equality from '../assets/equality.png' 
-import Whole from '../assets/whole.png'   
+import Empathy from '../assets/Empathy.png'
+import Sustainability from '../assets/Sustainability.png'
+import Inclusion from '../assets/Inclusion.png' 
+import Innovation from '../assets/Innovation.png' 
+import Authenticity from '../assets/Authenticity.png'
+import Collaboration from '../assets/Collaboration.png'
+import Entrepreneurial from '../assets/Entrepreneurial.png'        
 
 const Values = () => {
 
@@ -19,7 +22,7 @@ const Values = () => {
           transition: {
               ease: 'easeIn',
               duration: 0.9,
-              delay: 0.3
+              delay: 0.2
             }
       })
   }
@@ -41,24 +44,38 @@ const Values = () => {
 })
 
   return (
-    <div className='flex flex-col font-barlow'>
-        <motion.span className='text-4xl lg:font-extrabold font-medium text-[#6100c1]/90 flex justify-center mt-16 mb-8 uppercase' ref={ref} animate={animationss}>Core values</motion.span>
-        <motion.div className='flex flex-col lg:flex-row lg:px-16 lg:pb-28 pb-20' animate={animations} ref={ref}>
-            <div className='flex flex-col basis-1/4 items-center'>
-                <span><img src={Human} alt='' className='w-40 h-40'/></span>
-                <span className='flex justify-center text-lg font-normal text-[#000000]/80'>Respect for human dignity</span>
+    <div className='flex flex-col font-barlow lg:py-20 py-16 lg:gap-8 gap-6 w-screen' ref={ref}>
+        <motion.span className='text-4xl lg:text-5xl lg:font-extrabold font-medium text-[#000000]/90 flex items-center justify-center uppercase' animate={animationss}>Core values</motion.span>
+        <motion.div className='flex flex-col lg:flex-row gap-8 lg:gap-24 justify-center items-center lg:px-12 lg:py-6 px-6' animate={animations}>
+            <div className='flex flex-col items-center w-48 gap-4'>
+                <span><img src={Empathy} alt='' className='w-40 h-40 border-2 border-[#6100c1] rounded-3xl'/></span>
+                <span className='flex justify-center text-center items-center text-lg font-normal text-[#000000]/80 lg:text-2xl lg:font-semibold'>Empathy</span>
             </div>
-            <div className='flex flex-col basis-1/4 items-center'>
-                <span><img src={Social} alt='' className='w-40 h-40'/></span>
-                <span className='flex justify-center text-lg font-normal text-[#000000]/80'>Social Justice</span>
+            <div className='flex flex-col items-center w-48 gap-4'>
+                <span><img src={Sustainability} alt='' className='w-40 h-40 border-2 border-[#6100c1] rounded-3xl'/></span>
+                <span className='flex justify-center text-center items-center text-lg font-normal text-[#000000]/80 lg:text-2xl lg:font-semibold'>Sustainability</span>
             </div>
-            <div className='flex flex-col basis-1/4 items-center'>
-                <span><img src={Equality} alt='' className='w-40 h-40'/></span>
-                <span className='flex justify-center text-lg font-normal text-[#000000]/80'>Equality and Equity</span>
+            <div className='flex flex-col items-center w-48 gap-4'>
+                <span><img src={Inclusion} alt='' className='w-40 h-40 border-2 border-[#6100c1] rounded-3xl'/></span>
+                <span className='flex justify-center text-center items-center text-lg font-normal text-[#000000]/80 lg:text-2xl lg:font-semibold'>Inclusion</span>
             </div>
-            <div className='flex flex-col basis-1/4 items-center'>
-                <span><img src={Whole} alt='' className='w-40 h-40'/></span>
-                <span className='flex justify-center text-lg font-normal text-[#000000]/80'>Wholeness and Inclusiveness</span>
+            <div className='flex flex-col items-center w-48 gap-4'>
+                <span><img src={Innovation} alt='' className='w-40 h-40 border-2 border-[#6100c1] rounded-3xl'/></span>
+                <span className='flex justify-center text-center items-center text-lg font-normal text-[#000000]/80 lg:text-2xl lg:font-semibold'>Innovation</span>
+            </div>
+        </motion.div>
+        <motion.div className='flex flex-col lg:flex-row gap-8 lg:gap-24 justify-center items-center lg:px-12 lg:py-6 px-6' animate={animations}>
+            <div className='flex flex-col items-center w-48 gap-4'>
+                <span><img src={Authenticity} alt='' className='w-40 h-40 border-2 border-[#6100c1] rounded-3xl'/></span>
+                <span className='flex justify-center text-center items-center text-lg font-normal text-[#000000]/80 lg:text-2xl lg:font-semibold'>Authenticity</span>
+            </div>
+            <div className='flex flex-col items-center w-48 gap-4'>
+                <span><img src={Collaboration} alt='' className='w-40 h-40 border-2 border-[#6100c1] rounded-3xl'/></span>
+                <span className='flex justify-center text-center items-center text-lg font-normal text-[#000000]/80 lg:text-2xl lg:font-semibold'>Collaboration</span>
+            </div>
+            <div className='flex flex-col items-center w-48 gap-4'>
+                <span><img src={Entrepreneurial} alt='' className='w-40 h-40 border-2 border-[#6100c1] rounded-3xl'/></span>
+                <span className='flex justify-center text-center items-center text-lg font-normal text-[#000000]/80 lg:text-2xl lg:font-semibold'>Entrepreneurial Mindset</span>
             </div>
         </motion.div>
     </div>
