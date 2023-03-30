@@ -20,7 +20,7 @@ const Create = () => {
                 <Counter target={55} title='Events' duration={3} />
             </div>
             <div className='flex lg:basis-2/3 basis-1/3 justify-center'>
-                <Counter target={100000} title='People reached' duration={5} />
+                <Counter target={20000000} title='People reached' duration={7} />
             </div>
             <div className='flex lg:basis-2/3 basis-1/3 justify-center'>
                 <Counter target={120} title='Communities engaged' duration={5} />

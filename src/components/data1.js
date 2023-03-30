@@ -31,7 +31,7 @@ export const slider = [
     {
         content1: `"I DON'T WANT TO LIVE IN A WORLD THAT DOESN'T LET`,
         content2: 'THE OTHER HALF OF US DO WHAT WE OUGHT"',
-        title: 'melina gates',
+        title: 'melinda gates',
     }
 
 ]
