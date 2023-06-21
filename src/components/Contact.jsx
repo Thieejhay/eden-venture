@@ -30,10 +30,10 @@ const Contact = () => {
         <div className='flex flex-col gap-3'>
             <span className='flex justify-center lg:justify-start'><img src={Logo} className='w-16 h-20 opacity-90' alt=''/></span>
             <span className='flex gap-6'>
-            <Link to='/profile'><span className='text-[#E2E7E9]/80 text-sm font-normal'>About Us</span></Link>
-                <Link to='/profile'><span className='text-[#E2E7E9]/80 text-sm font-normal'>Programs</span></Link>
-                <Link to='/profile'><span className='text-[#E2E7E9]/80 text-sm font-normal'>News</span></Link>
-                <Link to='/profile'><span className='text-[#E2E7E9]/80 text-sm font-normal'>Donate</span></Link>
+                <Link to='/profile'><span className='text-[#ffffff] text-base font-extralight'>About Us</span></Link>
+                <Link to='/profile'><span className='text-[#ffffff] text-base font-extralight'>Programs</span></Link>
+                <Link to='/profile'><span className='text-[#ffffff] text-base font-extralight'>News</span></Link>
+                <Link to='/profile'><span className='text-[#ffffff] text-base font-extralight'>Donate</span></Link>
             </span>
             <div className='flex gap-6 justify-center lg:justify-start'>
                 <span className='p-1 bg-[#E2E7E9]/80 rounded-md'><a href='https://www.linkedin.com/company/evgnigeria/?viewAsMember=true' rel='noreferrer'><FaLinkedinIn className='lg:w-4 w-3 h-3 lg:h-4 text-[#000000]/90'/></a></span>

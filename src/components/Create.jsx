@@ -1,6 +1,7 @@
 import React from 'react';
 import Counter from './Counter';
-import Wee from '../assets/WEE.gif'
+import Wee from '../assets/WEE.gif';
+import {Link} from 'react-router-dom';
 
 
 const Create = () => {
@@ -26,6 +27,7 @@ const Create = () => {
                 <Counter target={120} title='Communities engaged' duration={5} />
             </div>
         </div>
+        <Link to='/wecreate'><span className='text-xl font-medium text-[#E2E7E9]/90 flex justify-center mt-4 uppercase'>Read more</span></Link>
     </div>
   )
 }
