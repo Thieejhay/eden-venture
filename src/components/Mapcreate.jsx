@@ -15,28 +15,28 @@ const Mapcreate = () => {
         parent.current && autoAnimate(parent.current)
       }, [parent])
 
-    const[mapInfo, setMapInfo] = useState(['']);
+    const[mapInfo, setMapInfo] = useState([]);
     const filter = (type) => {
         setMapInfo(MapData.filter((info)=>info.type === type))
     };
 
   return (
     <div className='flex flex-col'>
-        <div className='flex gap-4 relative'>
-            <div className='flex relative w-[50rem] h-[40rem]'>
-                <ComposableMap className='absolute top-0'>
+        <div className='flex flex-col relative'>
+            <div className='flex relative justify-center items-center'>
+                <ComposableMap className='flex w-[40rem] -mt-12'>
                     <Geographies geography={geoUrl}>
                         {({ geographies }) =>
                             geographies.map((geo) => (
-                            <Geography key={geo.rsmKey} geography={geo} fill="#DDD"
-                            stroke="#FFF"
+                            <Geography key={geo.rsmKey} geography={geo} fill="#055594"
+                            stroke="#FFF" opacity={0.8}
                             />
                             ))
                         }
                     </Geographies>
                     <Marker coordinates={[-84.386330, 33.753746]} style={{
                         default: {
-                        fill: "#055594",
+                        fill: "#0CB3A2",
                         },
                         hover: {
                         fill: "#0CB3A2",
@@ -46,7 +46,7 @@ const Mapcreate = () => {
                     </Marker>
                     <Marker coordinates={[7.491302, 9.072264]} style={{
                         default: {
-                        fill: "#055594",
+                        fill: "#0CB3A2",
                         },
                         hover: {
                         fill: "#0CB3A2",
@@ -54,7 +54,7 @@ const Mapcreate = () => {
                         }} className='cursor-pointer opacity-75' onClick={()=>filter('abuja')}>
                         <circle r={8} />
                     </Marker>
-                    <Marker coordinates={[3.406448, 6.465422]} style={{
+                    {/* <Marker coordinates={[3.406448, 6.465422]} style={{
                         default: {
                         fill: "#055594",
                         },
@@ -63,10 +63,10 @@ const Mapcreate = () => {
                         },
                         }} className='cursor-pointer opacity-75' onClick={()=>filter('lagos')}>
                         <circle r={8} />
-                    </Marker>
+                    </Marker> */}
                     <Marker coordinates={[-120.740135, 47.751076]} style={{
                         default: {
-                        fill: "#055594",
+                        fill: "#0CB3A2",
                         },
                         hover: {
                         fill: "#0CB3A2",
@@ -76,22 +76,21 @@ const Mapcreate = () => {
                     </Marker>
                 </ComposableMap>
             </div>
+            <div className='flex w-screen h-12 bg-[#0CB3A2] items-center justify-center -mt-12'>
+                <span className='flex items-center text-xl lg:font-bold font-medium lg:tracking-wider text-[#ffffff] uppercase'>click the dots to see locations..</span>
+            </div>
             <div ref={parent}>
                 {
                     mapInfo.map((info, i) => (
-                        <div key={i}>
-                            <div>
-                                <span>{info.location}</span>
-                                <span>{info.title}</span>
-                                <span>{info.mssg}</span>
+                        <div key={i} className='pt-6 pb-12 bg-gray-400/20'>
+                            <div className='flex flex-col gap-3 items-center justify-center'>
+                                <span className='text-3xl font-extrabold text-[#055594]'>{info.location}</span>
+                                <img src={info.url} alt='' className='h-[28rem] w-[60rem] rounded'></img>
                             </div>
                         </div>
                     ))
                 }
             </div>
-        </div>
-        <div className='flex w-screen h-12 bg-[#0CB3A2]'>
-
         </div>
     </div>
   )

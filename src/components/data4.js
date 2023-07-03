@@ -12,25 +12,23 @@ const imageSlide3 = [
 
 export default imageSlide3;
 
+
 export const MapData = [{
     id: 0,
     location: 'ATLANTA',
-    title: '',
-    mssg: '',
+    url: 'map1.png',
     type: 'atlanta'
 },
 {
     id: 1,
     location: 'WASHINGTON DC',
-    title: '',
-    mssg: '',
+    url: 'map2.png',
     type: 'washington'
 },
 {
     id: 2,
     location: 'ABUJA',
-    title: '',
-    mssg: '',
+    url: 'map3.png',
     type: 'abuja'
 },
 {

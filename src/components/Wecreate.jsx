@@ -10,7 +10,7 @@ import Together from './Together';
 
 const Wecreate = () => {
   return (
-    <div className='flex flex-col opacity-100 font-barlow'>
+    <div className='flex flex-col opacity-100 font-barlow overflow-x-hidden'>
         <Createheader />
         <Together />
         <Movement />

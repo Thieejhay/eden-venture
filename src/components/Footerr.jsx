@@ -23,7 +23,7 @@ const Footerr = () => {
             </span>
             <span className='flex flex-col gap-3'>
                 <Link to='/profile'><span className='text-[#ffffff] text-base font-extralight'>About Us</span></Link>
-                <Link to='/profile'><span className='text-[#ffffff] text-base font-extralight'>Programs</span></Link>
+                <Link to='/wecreate'><span className='text-[#ffffff] text-base font-extralight'>WEEcreate</span></Link>
                 <Link to='/profile'><span className='text-[#ffffff] text-base font-extralight'>News</span></Link>
                 <Link to='/profile'><span className='text-[#ffffff] text-base font-extralight'>Donate</span></Link>
             </span>
@@ -33,14 +33,13 @@ const Footerr = () => {
                 Our Services
             </span>
             <span className='flex flex-col gap-3'>
-                <span className='text-[#ffffff] text-base font-extralight'>About us</span>
-                <span className='text-[#ffffff] text-base font-extralight'>WEEcreate</span>
-                <span className='text-[#ffffff] text-base font-extralight'>About us</span>
+                <Link to='/profile'><span className='text-[#ffffff] text-base font-extralight'>About Us</span></Link>
+                <Link to='/wecreate'><span className='text-[#ffffff] text-base font-extralight'>WEEcreate</span></Link>
             </span>
         </div>
         <div className='flex flex-col gap-5'>
             <span className='text-[#ffffff] text-xl font-medium'>
-                Our Company
+                Get In Touch
             </span>
             <span className='flex flex-col gap-3'>
                 <span className='text-[#ffffff] text-base font-extralight'>Address</span>
