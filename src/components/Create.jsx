@@ -1,6 +1,7 @@
 import React from 'react';
 import Counter from './Counter';
 import Wee from '../assets/WEE.gif';
+import {Link} from 'react-router-dom';
 
 
 
@@ -12,7 +13,7 @@ const Create = () => {
         <span className='lg:text-5xl text-4xl font-medium text-[#E2E7E9]/90 flex justify-center lg:my-20 my-16 items-center text-center'>SOW presents WEECreateAfrica</span>
         <div className='flex justify-center'>
             <div className=''>
-                <img  src={Wee} alt='' className='lg:w-[52rem] h-[16rem] lg:h-[30rem] box-border rounded-2xl flex'/>
+            <Link to='/wecreate'><img  src={Wee} alt='' className='lg:w-[52rem] h-[16rem] lg:h-[30rem] box-border rounded-2xl flex'/></Link>
             </div>
         </div>
         <span className='text-3xl font-medium text-[#E2E7E9]/90 flex justify-center mt-16 uppercase'>Impact</span>

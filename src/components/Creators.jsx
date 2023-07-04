@@ -3,7 +3,7 @@ import { BsDot } from 'react-icons/bs';
 
 const Creators = () => {
   return (
-    <div className='flex relative bg-gray-200/20 py-12 lg:py-32 px-6 w-screen font-barlow'>
+    <div className='flex relative bg-gray-200/20 py-12 lg:py-20 px-6 w-screen font-barlow'>
         <div className='flex w-full h-[42rem] lg:h-[30rem]'>
             <div className='flex flex-col lg:w-[30%] w-[50%] bg-[#055594] rounded-l-2xl items-center justify-center'>
                 <span className='lg:text-4xl text-xl font-black text-[#ffffff] lg:tracking-wide'>#WEECreateAfrica</span>

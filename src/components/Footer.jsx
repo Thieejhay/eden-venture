@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className='flex justify-between bg-[#055594] w-screen lg:h-[20rem] lg:pt-20 lg:px-20 px-2 py-8'>
+    <div className='flex justify-between bg-[#055594] w-screen lg:h-[20rem] lg:pt-20 lg:px-20 px-4 py-8'>
         <div className='flex flex-col gap-3'>
             <div className='flex justify-center'>
                 <img src={Logo} className='lg:w-20 w-16 h-16 lg:h-20 opacity-90' alt=''></img>
@@ -18,32 +18,34 @@ const Footer = () => {
             </div>
         </div>
         <div className='flex flex-col lg:gap-5 gap-3'>
-            <span className='text-[#ffffff] lg:text-xl lg:font-medium text-sm'>
+            <span className='text-[#ffffff] lg:text-xl lg:font-normal text-sm'>
                 Our Company
             </span>
             <span className='flex flex-col gap-3'>
+                <Link to='/'><span className='text-[#ffffff] lg:text-base text-xs font-extralight'>Home</span></Link>
                 <Link to='/profile'><span className='text-[#ffffff] lg:text-base text-xs font-extralight'>About Us</span></Link>
-                <Link to='/wecreate'><span className='text-[#ffffff] lg:text-base text-xs font-extralight'>WEEcreate</span></   Link>
-                <Link to='/profile'><span className='text-[#ffffff] lg:text-base text-xs font-extralight'>News</span></Link>
-                <Link to='/profile'><span className='text-[#ffffff] lg:text-base text-xs font-extralight'>Donate</span></Link>
+                <Link to='/wecreate'><span className='text-[#ffffff] lg:text-base text-xs font-extralight'>WEECreateAfrica</span></   Link>
             </span>
         </div>
         <div className='flex flex-col lg:gap-5 gap-3'>
-            <span className='text-[#ffffff] lg:text-xl lg:font-medium text-sm'>
+            <span className='text-[#ffffff] lg:text-xl lg:font-normal text-sm'>
                 Our Services
             </span>
             <span className='flex flex-col gap-3'>
-            <Link to='/profile'><span className='text-[#ffffff] lg:text-base text-xs font-extralight'>About Us</span></Link>
-                <Link to='/wecreate'><span className='text-[#ffffff] lg:text-base text-xs font-extralight'>WEEcreate</span></Link>
+                <span className='text-[#ffffff] lg:text-base text-xs font-extralight'>News</span>
+                <span className='text-[#ffffff] lg:text-base text-xs font-extralight'>Donate</span>
             </span>
         </div>
         <div className='flex flex-col lg:gap-5 gap-3'>
-            <span className='text-[#ffffff] lg:text-xl lg:font-medium text-sm'>
+            <span className='text-[#ffffff] lg:text-xl lg:font-normal text-sm'>
                 Get In Touch
             </span>
             <span className='flex flex-col gap-3'>
                 <span className='text-[#ffffff] lg:text-base text-xs font-extralight'>Address</span>
-                <span className='text-[#ffffff] lg:text-base text-xs font-extralight'>Email</span>
+                <span className='text-[#ffffff] lg:text-base text-[0.4rem] font-extralight lg:w-40 text-clip'>edenventuregroup@gmail.com</span>
+                <span className='flex flex-col'>
+                    
+                </span>
             </span>
         </div>
     </div>

@@ -77,15 +77,15 @@ const Mapcreate = () => {
                 </ComposableMap>
             </div>
             <div className='flex w-screen h-12 bg-[#0CB3A2] items-center justify-center -mt-12'>
-                <span className='flex items-center text-xl lg:font-bold font-medium lg:tracking-wider text-[#ffffff] uppercase'>click the dots to see locations..</span>
+                <span className='flex items-center justify-center text-xs lg:text-xl lg:font-bold font-medium lg:tracking-wider text-[#ffffff]'>click the dots to see some lessons learned at the location</span>
             </div>
             <div ref={parent}>
                 {
                     mapInfo.map((info, i) => (
-                        <div key={i} className='pt-6 pb-12 bg-gray-400/20'>
+                        <div key={i} className='pt-6 lg:pb-12 pb-6 bg-gray-400/20'>
                             <div className='flex flex-col gap-3 items-center justify-center'>
                                 <span className='text-3xl font-extrabold text-[#055594]'>{info.location}</span>
-                                <img src={info.url} alt='' className='h-[28rem] w-[60rem] rounded'></img>
+                                <img src={info.url} alt='' className='lg:h-[28rem] h-[15rem] w-[22rem] lg:w-[60rem] rounded'></img>
                             </div>
                         </div>
                     ))
