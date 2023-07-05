@@ -5,7 +5,7 @@ const Createvideo = () => {
   return (
     <div className='flex flex-col gap-8'>
         <div className='flex justify-center items-center lg:px-0 px-6 pt-4 lg:pt-0'>
-         <img  src={Wee} alt='' className='lg:w-[52rem] h-[16rem]  lg:h-[30rem] box-border rounded-2xl flex'/>
+          <a href='https://www.instagram.com/reel/CtMRqPauFho/?igshid=Y2I2MzMwZWM3ZA==' rel='noreferrer'><img  src={Wee} alt='' className='lg:w-[52rem] h-[16rem]  lg:h-[30rem] box-border rounded-2xl flex'/></a>
         </div>
         <div className='flex bg-[#055594] w-screen'>
             <div className='flex items-center justify-center w-full'>

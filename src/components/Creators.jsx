@@ -6,7 +6,7 @@ const Creators = () => {
     <div className='flex relative bg-gray-200/20 py-12 lg:py-20 px-6 w-screen font-barlow'>
         <div className='flex w-full h-[42rem] lg:h-[30rem]'>
             <div className='flex flex-col lg:w-[30%] w-[50%] bg-[#055594] rounded-l-2xl items-center justify-center'>
-                <span className='lg:text-4xl text-xl font-black text-[#ffffff] lg:tracking-wide'>#WEECreateAfrica</span>
+                <span className='lg:text-4xl text-lg font-black text-[#ffffff] lg:tracking-wide'>#WEECreateAfrica</span>
                 <span className='lg:text-lg text-base font-medium text-[#ffffff] lg:tracking-wide lg:w-[80%] ml-3 lg:ml-0'>Women Economic Empowerment x Creators</span>
             </div>
             <div className='flex flex-col space-y-4 lg:w-[70%] w-[50%] bg-gray-400/20 rounded-r-2xl lg:px-4 px-1 justify-center'>

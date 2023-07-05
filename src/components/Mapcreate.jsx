@@ -24,7 +24,7 @@ const Mapcreate = () => {
     <div className='flex flex-col'>
         <div className='flex flex-col relative'>
             <div className='flex relative justify-center items-center'>
-                <ComposableMap className='flex w-[40rem] -mt-12'>
+                <ComposableMap className='flex w-[40rem] lg:-mt-12'>
                     <Geographies geography={geoUrl}>
                         {({ geographies }) =>
                             geographies.map((geo) => (
@@ -76,7 +76,7 @@ const Mapcreate = () => {
                     </Marker>
                 </ComposableMap>
             </div>
-            <div className='flex w-screen h-12 bg-[#0CB3A2] items-center justify-center -mt-12'>
+            <div className='flex w-screen h-12 bg-[#0CB3A2] items-center justify-center lg:-mt-12'>
                 <span className='flex items-center justify-center text-xs lg:text-xl lg:font-bold font-medium lg:tracking-wider text-[#ffffff]'>click the dots to see some lessons learned at the location</span>
             </div>
             <div ref={parent}>
