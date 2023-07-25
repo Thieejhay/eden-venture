@@ -22,9 +22,9 @@ const Footer = () => {
                 Our Company
             </span>
             <span className='flex flex-col gap-3'>
-                <Link to='/'><span className='text-[#ffffff] lg:text-base text-[0.65rem] font-extralight'>Home</span></Link>
-                <Link to='/profile'><span className='text-[#ffffff] lg:text-base text-[0.65rem] font-extralight'>About Us</span></Link>
-                <Link to='/wecreate'><span className='text-[#ffffff] lg:text-base text-[0.65rem] font-extralight'>WEECreateAfrica</span></Link>
+                <Link to='/'><span className='text-[#ffffff] lg:text-base text-[0.65rem] font-light'>Home</span></Link>
+                <Link to='/profile'><span className='text-[#ffffff] lg:text-base text-[0.65rem] font-light'>About Us</span></Link>
+                <Link to='/wecreate'><span className='text-[#ffffff] lg:text-base text-[0.65rem] font-light'>WEECreateAfrica</span></Link>
             </span>
         </div>
         {/* <div className='flex flex-col lg:gap-5 gap-3'>
@@ -41,8 +41,8 @@ const Footer = () => {
                 Get In Touch
             </span>
             <span className='flex flex-col gap-3'>
-                <span className='text-[#ffffff] lg:text-base text-[0.65rem] font-extralight'>Address</span>
-                <span className='text-[#ffffff] lg:text-base text-[0.65rem] font-extralight lg:w-40 text-clip'>edenventuregroup@gmail.com</span>
+                <span className='text-[#ffffff] lg:text-base text-[0.65rem] font-light'>Address</span>
+                <span className='text-[#ffffff] lg:text-base text-[0.65rem] font-light lg:w-40 text-clip'>edenventuregroup@gmail.com</span>
             </span>
         </div>
     </div>

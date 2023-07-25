@@ -1,7 +1,6 @@
 import React from 'react';
 import Createheader from './Createheader';
 import Createimage from './Createimage';
-import Createvideo from './Createvideo';
 import Creators from './Creators';
 import Footer from './Footer';
 import Mapcreate from './Mapcreate';
@@ -16,7 +15,6 @@ const Wecreate = () => {
         <Movement />
         <Creators />
         <Createimage />
-        <Createvideo />
         <Mapcreate />
         <Footer />
     </div>

@@ -28,7 +28,7 @@ export const MapData = [{
 {
     id: 2,
     location: 'ABUJA',
-    url: 'map3.png',
+    url: ['map3.png', 'map1.png', 'map2.png'],
     type: 'abuja'
 },
 {
