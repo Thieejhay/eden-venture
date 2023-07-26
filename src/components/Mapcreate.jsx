@@ -74,7 +74,7 @@ const Mapcreate = () => {
                         }} className='cursor-pointer opacity-75' onClick={()=>filter('lagos')}>
                         <circle r={8} />
                     </Marker> */}
-                    <Marker coordinates={[-120.740135, 47.751076]} style={{
+                    <Marker coordinates={[-77.03637, 38.89511]} style={{
                         default: {
                         fill: "#0CB3A2",
                         },

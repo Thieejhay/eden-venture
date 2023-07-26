@@ -12,8 +12,8 @@ const Createimage = () => {
           <div className='flex w-full justify-end pt-20 pr-44 z-10'>
             <div className='flex flex-col gap-8'>
               <span className='uppercase text-6xl font-semibold w-[25rem] tracking-wider leading-snug text-white/90'>A Message from our founder</span>
-              <span className='flex gap-8'>
-                <span className='uppercase text-2xl font-light text-white'>Click to watch</span>
+              <span className='flex gap-4'>
+                <a href='https://www.instagram.com/reel/CtMRqPauFho/?igshid=MzRIODBiNWFIZA==' target='_blank' rel='noreferrer'><span className='uppercase text-2xl font-light text-white'>Click to watch</span></a>
                 <span className='flex items-center'><BsPlayCircle className='w-7 h-7 text-white'/></span>
               </span>
             </div>

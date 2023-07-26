@@ -12,7 +12,7 @@ const Footer = () => {
             </div>
             <div className='flex lg:gap-3 gap-1 justify-center'>
                 <span className='p-1 bg-[#0CB3A2]/80 rounded-md'><a href='https://www.linkedin.com/company/evgnigeria/?viewAsMember=true' rel='noreferrer'><FaLinkedinIn className='lg:w-4 w-2 h-2 lg:h-4 text-[#000000]/90'/></a></span>
-                <span className='p-1 bg-[#0CB3A2]/80 rounded-md'><a href='https//:www.instagram.com/edenventuregroup/?hl=en' rel='noreferrer'><FaInstagram className='lg:w-4 w-2 h-2 lg:h-4 text-[#000000]/90'/></a></span>
+                <span className='p-1 bg-[#0CB3A2]/80 rounded-md'><a href='https://www.instagram.com/edenventuregroup/?hl=en' rel='noreferrer'><FaInstagram className='lg:w-4 w-2 h-2 lg:h-4 text-[#000000]/90'/></a></span>
                 <span className='p-1 bg-[#0CB3A2]/80 rounded-md'><a href='https://twitter.com/weecreateafrica?s=21&t=DspMjJG2ePwZzOqrDbEHUw' rel='noreferrer'><FaTwitter className='lg:w-4 w-2 h-2 lg:h-4 text-[#000000]/90'/></a></span>
                 <span className='p-1 bg-[#0CB3A2]/80 rounded-md'><a href='https://www.youtube.com/@weecreateafrica?sub_confirmation=1' rel='noreferrer'><FaYoutube className='lg:w-4 w-2 h-2 lg:h-4 text-[#000000]/90'/></a></span>
             </div>
@@ -41,7 +41,7 @@ const Footer = () => {
                 Get In Touch
             </span>
             <span className='flex flex-col gap-3'>
-                <span className='text-[#ffffff] lg:text-base text-[0.65rem] font-light'>Address</span>
+                
                 <span className='text-[#ffffff] lg:text-base text-[0.65rem] font-light lg:w-40 text-clip'>Info@edenventuregroup.com</span>
             </span>
         </div>
