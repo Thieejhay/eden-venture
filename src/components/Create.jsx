@@ -10,7 +10,7 @@ const Create = () => {
 
   return (
     <div className='flex flex-col text-white lg:h-[65rem] w-screen bg-[#000000]/90 px-4 lg:px-0 h-[48rem] font-barlow'>
-        <span className='lg:text-5xl text-4xl font-medium text-[#E2E7E9]/90 flex justify-center lg:my-20 my-16 items-center text-center'>SOW presents WEECreateAfrica</span>
+        <span className='lg:text-3xl text-4xl font-medium text-[#E2E7E9]/90 flex justify-center lg:my-20 my-16 items-center text-center'>WEECreateAfrica - An Eden Venture Group Initiative</span>
         <div className='flex justify-center'>
             <div className=''>
             <Link to='/wecreate'><img  src={Wee} alt='' className='lg:w-[52rem] h-[16rem] lg:h-[30rem] box-border rounded-2xl flex'/></Link>
@@ -22,10 +22,10 @@ const Create = () => {
                 <Counter target={55} title='Events' duration={3} />
             </div>
             <div className='flex lg:basis-2/3 basis-1/3 justify-center'>
-                <Counter target={20000000} title='People reached' duration={7} />
+                <Counter target={20000000} title='People reached' duration={3} />
             </div>
             <div className='flex lg:basis-2/3 basis-1/3 justify-center'>
-                <Counter target={120} title='Communities engaged' duration={5} />
+                <Counter target={120} title='Communities engaged' duration={3} />
             </div>
         </div>
     </div>

@@ -3,13 +3,13 @@ import { useState, useRef, useEffect, } from 'react';
 import { ComposableMap, Geographies, Geography, Marker } from "react-simple-maps";
 import { MapData } from './data4';
 import autoAnimate from '@formkit/auto-animate';
-import {AiOutlineClose} from 'react-icons/ai';
-import { IoIosArrowForward, IoIosArrowBack} from 'react-icons/io';
-import {Swiper, SwiperSlide} from 'swiper/react';
-import { Pagination, Navigation } from 'swiper';
-import 'swiper/css'
-import 'swiper/css/pagination'
-import 'swiper/css/navigation'
+// import {AiOutlineClose} from 'react-icons/ai';
+// import { IoIosArrowForward, IoIosArrowBack} from 'react-icons/io';
+// import {Swiper, SwiperSlide} from 'swiper/react';
+// import { Pagination, Navigation } from 'swiper';
+// import 'swiper/css'
+// import 'swiper/css/pagination'
+// import 'swiper/css/navigation'
 
 const geoUrl =
   "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json";
@@ -92,42 +92,43 @@ const Mapcreate = () => {
             
                 {
                     mapInfo.map((info, i) => (
-                       <div className='flex absolute z-10 w-screen h-screen bg-[#000000]/50 flex-col pt-8 px-20'>
-                        <span className='flex justify-end'><AiOutlineClose className='w-10 h-10 text-white/60' onClick={()=>filter('')} /></span>
-                        <div>
-                        <Swiper
-                            breakpoints={{
-                            640: {slidesPerView: 1},
-                            0: {slidesPerView: 1}
-                            }}
-                            modules={[Pagination, Navigation]}
-                            navigation={{
-                            nextEl: '.image-swiper-button-next',
-                            prevEl: '.image-swiper-button-prev',
-                            disabledClass: 'swiper-button-disabled'
-                            }}
+                    //    <div className='flex absolute z-10 w-screen h-screen bg-[#000000]/50 flex-col pt-8 px-20'>
+                    //     <span className='flex justify-end'><AiOutlineClose className='w-10 h-10 text-white/60' onClick={()=>filter('')} /></span>
+                    //     <div>
+                    //     <Swiper
+                    //         breakpoints={{
+                    //         640: {slidesPerView: 1},
+                    //         0: {slidesPerView: 1}
+                    //         }}
+                    //         modules={[Pagination, Navigation]}
+                    //         navigation={{
+                    //         nextEl: '.image-swiper-button-next',
+                    //         prevEl: '.image-swiper-button-prev',
+                    //         disabledClass: 'swiper-button-disabled'
+                    //         }}
         
-                            slidesPerView={1}
-                            loop={true} 
-                            className='lg:w-[70%] w-[80%] h-[19rem] mySwiper mt-16'>
-                                <SwiperSlide className='flex flex-col relative overflow-hidden box-border' key={i}>
-                                    <div className='flex'><img src={info.url} alt='' className='lg:h-[19rem] h-[15rem] w-[22rem] lg:w-[30rem] rounded'/></div>
-                                </SwiperSlide>
-                        </Swiper>
-                        </div>
-                        <div className='absolute cursor-pointer z-10 flex lg:right-32 right-0 lg:top-[50%] top-[40%] image-swiper-button-next'>
-                        <IoIosArrowForward size={50} className='text-[#6100c1]'/>
-                        </div>
-                        <div className='absolute cursor-pointer z-10 flex lg:left-32 left-0 lg:top-[50%] top-[40%] image-swiper-button-prev'>
-                        <IoIosArrowBack size={50} className='text-[#6100c1]'/>
-                        </div>
-                         {/* <div key={i} className='pt-6 lg:pb-12 pb-6 bg-gray-400/20'>
+                    //         slidesPerView={1}
+                    //         loop={true} 
+                    //         className='lg:w-[70%] w-[80%] h-[19rem] mySwiper mt-16'>
+                    //             <SwiperSlide className='flex flex-col relative overflow-hidden box-border' key={i}>
+                    //                 <div className='flex'><img src={info.url} alt='' className='lg:h-[19rem] h-[15rem] w-[22rem] lg:w-[30rem] rounded'/></div>
+                    //             </SwiperSlide>
+                    //     </Swiper>
+                    //     </div>
+                    //     <div className='absolute cursor-pointer z-10 flex lg:right-32 right-0 lg:top-[50%] top-[40%] image-swiper-button-next'>
+                    //     <IoIosArrowForward size={50} className='text-[#6100c1]'/>
+                    //     </div>
+                    //     <div className='absolute cursor-pointer z-10 flex lg:left-32 left-0 lg:top-[50%] top-[40%] image-swiper-button-prev'>
+                    //     <IoIosArrowBack size={50} className='text-[#6100c1]'/>
+                    //     </div>
+                         
+                    //    </div>
+                        <div key={i} className='pt-6 lg:pb-12 pb-6 bg-gray-400/20' ref={parent}>
                             <div className='flex flex-col gap-3 items-center justify-center'>
                                 <span className='text-3xl font-extrabold text-[#055594]'>{info.location}</span>
-                                <img src={info.url} alt='' className='lg:h-[28rem] h-[15rem] w-[22rem] lg:w-[60rem] rounded'></img>
+                                <img src={info.url} alt='' className='lg:h-[28rem] h-[15rem] w-[22rem] lg:w-[55rem] rounded'></img>
                             </div>
-                        </div> */}
-                       </div>
+                        </div>
                     ))
                 }
         </div>

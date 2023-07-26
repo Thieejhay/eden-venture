@@ -42,7 +42,7 @@ const Footerr = () => {
             </span>
             <span className='flex flex-col gap-3'>
                 <span className='text-[#ffffff] lg:text-base text-[0.65rem] font-extralight'>Address</span>
-                <span className='text-[#ffffff] lg:text-base text-[0.65rem] font-extralight lg:w-40 text-clip'>edenventuregroup@gmail.com</span>
+                <span className='text-[#ffffff] lg:text-base text-[0.65rem] font-extralight lg:w-40 text-clip'>Info@edenventuregroup.com</span>
             </span>
         </div>
     </div>
