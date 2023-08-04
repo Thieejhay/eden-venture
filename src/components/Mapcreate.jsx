@@ -86,7 +86,7 @@ const Mapcreate = () => {
                     </Marker>
                 </ComposableMap>
             </div>
-            <div className='flex w-screen h-12 bg-[#95C93E]/95 items-center justify-center -mt-28 z-10'>
+            <div className='flex w-screen lg:h-12 h-8 bg-[#95C93E] items-center justify-center lg:-mt-28 -mt-12 z-50'>
                 <span className='flex items-center justify-center text-xs lg:text-xl lg:font-bold font-medium lg:tracking-wider text-[#ffffff]'>click the dots to see some lessons learned at the location</span>
             </div>
             
@@ -123,7 +123,7 @@ const Mapcreate = () => {
                     //     </div>
                          
                     //    </div>
-                        <div key={i} className='pt-6 pb-6 bg-[#0CB3A2]/10 z-10' ref={parent}>
+                        <div key={i} className='pt-6 pb-6 bg-[#0CB3A2]/10 z-50' ref={parent}>
                             <div className='flex flex-col gap-3 items-center justify-center'>
                                 <span className='text-3xl font-extrabold text-[#1F389F]/95'>{info.location}</span>
                                 <img src={info.url} alt='' className='lg:h-[25rem] h-[15rem] w-[22rem] lg:w-[45rem] rounded'></img>

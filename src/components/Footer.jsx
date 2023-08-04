@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className='flex justify-between bg-[#1F389F]/95 z-50 w-screen lg:h-[17rem] lg:pt-20 lg:px-40 px-4 py-8'>
+    <div className='flex justify-between bg-[#1F389F] z-50 w-screen lg:h-[17rem] lg:pt-20 lg:px-40 px-4 py-8'>
         <div className='flex flex-col gap-3'>
             <div className='flex justify-center'>
                 <img src={Logo} className='lg:w-20 w-12 h-12 lg:h-20 opacity-90' alt=''></img>
