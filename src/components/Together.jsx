@@ -31,17 +31,17 @@ const Together = () => {
       const bgImageStyle2 = {
         backgroundImage: `url(${imageSlide4[currentSlide].url})`,
         backgroundSize: 'cover',
-        height: '48rem',
+        height: '38rem',
         width: '100vw',
         transition: 'background 0.3s ease-in',
       }
 
   return (
-    <div className='flex text-white relative lg:h-screen h-[48rem] w-screen font-barlow flex-col'>
+    <div className='flex text-white relative lg:h-screen h-[38rem] w-screen font-barlow flex-col'>
         <div style={bgImageStyle} className='hidden lg:flex'></div>
         <div style={bgImageStyle2} className='lg:hidden flex'></div>
         <div className='flex absolute bottom-0 z-10 w-screen'><img src={Overlay} alt='' className='w-full h-[30rem]'></img></div>
-        <div className='flex absolute bottom-0 z-20 lg:-left-48 -left-52'><img src={Design} alt='' className='lg:w-[28rem] lg:h-[16rem] w-80 h-36'></img></div>
+        <div className='flex absolute bottom-0 z-20 lg:-left-48 -left-[13.5rem]'><img src={Design} alt='' className='lg:w-[28rem] lg:h-[16rem] w-80 h-36'></img></div>
         <div className='flex flex-col absolute lg:bottom-10 bottom-4 lg:right-56 right-2 gap-2 z-20'>
           <span className='lg:text-5xl text-xl font-semibold'>Together We Create Africa:</span>
           <span className='lg:text-lg text-xs font-normal text-justify lg:w-[34rem] w-[16rem] lg:pl-3'>Igniting Change through Empowring Talks that Inspire, Educate, and Transform Lives, Building a Brighter Future for our Continent.</span>
