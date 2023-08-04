@@ -6,7 +6,7 @@ const Createheader = () => {
   return (
     <div className='flex justify-center items-center bg-[#ffffff] border-none font-barlow w-screen'>
         <div className='flex justify-center items-center py-1'>
-          <Link to='/'><img src={Logo} className='lg:w-32 w-28 h-24 lg:h-32 opacity-90' alt=''></img></Link>
+          <Link to='/'><img src={Logo} className='lg:w-32 w-16 h-16 lg:h-32 opacity-90' alt=''></img></Link>
         </div>
     </div>
   )

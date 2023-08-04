@@ -31,20 +31,20 @@ const Together = () => {
       const bgImageStyle2 = {
         backgroundImage: `url(${imageSlide4[currentSlide].url})`,
         backgroundSize: 'cover',
-        height: '100vh',
+        height: '48rem',
         width: '100vw',
         transition: 'background 0.3s ease-in',
       }
 
   return (
-    <div className='flex text-white relative h-screen w-screen font-barlow flex-col'>
+    <div className='flex text-white relative lg:h-screen h-[48rem] w-screen font-barlow flex-col'>
         <div style={bgImageStyle} className='hidden lg:flex'></div>
         <div style={bgImageStyle2} className='lg:hidden flex'></div>
         <div className='flex absolute bottom-0 z-10 w-screen'><img src={Overlay} alt='' className='w-full h-[30rem]'></img></div>
-        <div className='flex absolute bottom-0 z-20 -left-48'><img src={Design} alt='' className='w-[28rem] h-[12rem]'></img></div>
-        <div className='flex flex-col absolute bottom-10 right-56 gap-2 z-20'>
-          <span className='text-5xl font-semibold'>Together We Create Africa:</span>
-          <span className='text-lg font-normal text-justify w-[34rem] pl-3'>Igniting Change through Empowring Talks that Inspire, Educate, and Transform Lives, Building a Brighter Future for our Continent.</span>
+        <div className='flex absolute bottom-0 z-20 lg:-left-48 -left-52'><img src={Design} alt='' className='lg:w-[28rem] lg:h-[16rem] w-80 h-36'></img></div>
+        <div className='flex flex-col absolute lg:bottom-10 bottom-4 lg:right-56 right-2 gap-2 z-20'>
+          <span className='lg:text-5xl text-xl font-semibold'>Together We Create Africa:</span>
+          <span className='lg:text-lg text-xs font-normal text-justify lg:w-[34rem] w-[16rem] lg:pl-3'>Igniting Change through Empowring Talks that Inspire, Educate, and Transform Lives, Building a Brighter Future for our Continent.</span>
         </div>
 
         {/* <div className='flex z-50 absolute lg:bottom-16 bottom-32 left-3 lg:left-8'>
