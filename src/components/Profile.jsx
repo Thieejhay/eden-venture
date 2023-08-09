@@ -1,11 +1,10 @@
 import React from 'react'
 import Aboutt from './Aboutt';
-import Contact from './Contact';
 import Universe from './Universe';
 import Founder from './Founder';
 import Partner from './Partner';
 import Solution from './Solution';
-// import Footer from './Footer'
+import Footerr from './Footerr'
 
 const Profile = () => {
   return (
@@ -17,7 +16,7 @@ const Profile = () => {
         <Universe />
         {/* <Footer /> */}
         {/* <Data /> */}
-        <Contact />
+        <Footerr />
     </div>
   )
 }

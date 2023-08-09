@@ -41,10 +41,10 @@ const Together = () => {
         <div style={bgImageStyle} className='hidden lg:flex'></div>
         <div style={bgImageStyle2} className='lg:hidden flex'></div>
         <div className='flex absolute bottom-0 z-10 w-screen'><img src={Overlay} alt='' className='w-full h-[30rem]'></img></div>
-        <div className='flex absolute bottom-0 z-20 lg:-left-48 -left-[13.5rem]'><img src={Design} alt='' className='lg:w-[28rem] lg:h-[16rem] w-80 h-36'></img></div>
-        <div className='flex flex-col absolute lg:bottom-10 bottom-4 lg:right-56 right-2 gap-2 z-20'>
-          <span className='lg:text-5xl text-xl font-semibold'>Together We Create Africa:</span>
-          <span className='lg:text-lg text-xs font-normal text-justify lg:w-[34rem] w-[16rem] lg:pl-3'>Igniting Change through Empowring Talks that Inspire, Educate, and Transform Lives, Building a Brighter Future for our Continent.</span>
+        <div className='flex absolute bottom-0 z-20 lg:-left-48 -left-[13.5rem]'><img src={Design} alt='' className='lg:w-[26rem] lg:h-[12rem] w-80 h-36'></img></div>
+        <div className='flex flex-col absolute lg:bottom-10 bottom-4 lg:right-56 right-4 gap-2 z-20'>
+          <span className='lg:text-6xl text-xl font-semibold'>Together We Create Africa</span>
+          {/* <span className='lg:text-lg text-xs font-normal text-justify lg:w-[34rem] w-[16rem] lg:pl-3'>Igniting Change through Empowring Talks that Inspire, Educate, and Transform Lives, Building a Brighter Future for our Continent.</span> */}
         </div>
 
         {/* <div className='flex z-50 absolute lg:bottom-16 bottom-32 left-3 lg:left-8'>

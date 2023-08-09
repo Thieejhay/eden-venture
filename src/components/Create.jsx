@@ -9,7 +9,7 @@ const Create = () => {
 
 
   return (
-    <div className='flex flex-col text-white lg:h-[65rem] w-screen bg-[#000000]/90 px-4 lg:px-0 h-[48rem] font-barlow'>
+    <div className='flex flex-col text-white lg:h-[65rem] w-screen bg-[#000000]/90 px-4 lg:px-0 h-[50rem] font-barlow'>
         <span className='lg:text-3xl text-4xl font-medium text-[#E2E7E9]/90 flex justify-center lg:my-20 my-16 items-center text-center'>WEECreateAfrica - An Eden Venture Group Initiative</span>
         <div className='flex justify-center'>
             <div className=''>
