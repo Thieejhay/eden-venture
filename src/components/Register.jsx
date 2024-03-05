@@ -31,7 +31,7 @@ const Register = () => {
       <div className='flex lg:flex-row flex-col'>
         <Link to='/'>
           <div className='flex z-50 absolute lg:left-16 left-3 top-2 lg:top-6'>
-            <img className='lg:w-fit w-32 h-16 lg:h-20 opacity-90' alt='' src={Logo}></img>
+            <img className='lg:w-44 w-32 h-16 lg:h-20 opacity-90' alt='' src={Logo}></img>
           </div>
         </Link>
         <span className='lg:w-[35%] w-full h-[20rem] lg:h-[30rem] bg-[#000000]'>
@@ -76,7 +76,8 @@ const Register = () => {
           <div className='bg-white p-8 rounded-lg shadow-lg'>
             <h2 className='text-xl font-semibold mb-4'>Registration Successful</h2>
             <p>Your registration was successful. Thank you!</p>
-            <button onClick={() => setShowPopup(false)} className='mt-4 px-4 py-2 bg-[#6100c1]/80 text-white rounded-md hover:[#6100c1]'>Close</button>
+            <button onClick={() => setShowPopup(false)} className='mt-4 px-4 py-2 bg-[#6100c1]/80 text-white rounded-md hover:[#6100c1]
+            '>Close</button>
           </div>
         </div>
       )}

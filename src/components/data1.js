@@ -37,6 +37,7 @@ import Prof from '../assets/profile/Headshot.png';
 // import Nneka from '../assets/profile/Dr Nneka Mobisson.png';
 import Adedolapo from '../assets/profile/Adedolapo Fasawe.png';
 import Tola from '../assets/profile/Tola.png';
+import Rhoda from '../assets/profile/Rhoda Robinson.png';
 
 
 
@@ -327,13 +328,6 @@ export const speakers2 = [
         img: Prof
 
     },
-    // {
-    //     id: 2,
-    //     name: 'Dr Judith-Ann Walker',
-    //     title: 'title',
-    //     img: Nneka
-
-    // },
     {
         id: 3,
         name: 'Dr. (Mrs) Adedolapo Fasawe',
@@ -346,6 +340,13 @@ export const speakers2 = [
         name: 'Tade Alalade',
         title: 'Maternal Health Champion and Fertility advocate',
         img: Tade
+
+    },
+    {
+        id: 2,
+        name: 'Rhoda Robinson',
+        title: 'Co-founder of HACEY',
+        img: Rhoda
 
     },
     // {

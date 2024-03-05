@@ -1,4 +1,4 @@
-import {React, useEffect, useState } from 'react';
+import {React, useEffect, useState, useRef } from 'react';
 import Logo from '../assets/eden.png';
 import banner from '../assets/mnch13.png';
 import banner1 from '../assets/55.png';
@@ -15,6 +15,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import {speakers2} from './data1';
 import { IoIosArrowForward, IoIosArrowBack} from 'react-icons/io';
+import emailjs from '@emailjs/browser';
 
 
 const Lagos = () => {
@@ -27,9 +28,29 @@ const Lagos = () => {
         setIsOpen(!isOpen);
       };
 
+      const form = useRef();
+  const [showPopup, setShowPopup] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_ai9a35h', 'template_1elk1vy', form.current, 'eSMX_5yNJFbgAvpAb')
+      .then(
+        (result) => {
+          console.log(result.text);
+          e.target.reset();
+          setShowPopup(true); // Show the pop-up after successful submission
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div className='flex flex-col w-screen font-barlow'>
-        <Link to='/'><div className='flex z-50 absolute lg:left-16 left-3 top-2 lg:top-6'><img className='lg:w-fit w-32 h-16 lg:h-20 opacity-90' alt='' src={Logo}></img></div></Link>
+        <Link to='/'><div className='flex z-50 absolute lg:left-16 left-3 top-2 lg:top-6'><img className='lg:w-44 w-32 h-16 lg:h-20 opacity-90' alt='' src={Logo}></img></div></Link>
       <div className='flex flex-col lg:h-[30rem] h-[25rem] justify-end items-center bg-cover bg-center' style={{ backgroundImage: `url(${banner})` }}>
             <img src={banner1} alt='' className=' lg:w-[30rem] w-[20rem]'></img>
             <Link to='/register'><span className='flex items-center lg:px-5 px-3 py-2 border-none rounded-md text-[#6100c1]/80 w-fit font-medium text-xl bg-[#E2E7E9]/90 mb-20'>Register</span></Link>
@@ -125,17 +146,17 @@ const Lagos = () => {
               <span className='text-2xl font-semibold opacity-90 uppercase text-[#E2E7E9]'> Share your story </span>
               <span className='text-lg font-normal opacity-95 text-[#E2E7E9]'>Tell your personal experience around maternal and child health</span>
             </span> 
-            <span className='flex flex-col p-4 bg-white rounded-md z-20 lg:mt-0 mt-2 w-fit '>
+            <span onSubmit={sendEmail} ref={form} className='flex flex-col p-4 bg-white rounded-md z-20 lg:mt-0 mt-2 w-fit '>
                 <input className=" lg:w-[30rem] h-40 mb-2 rounded px-3 bg-[#6100c1]/70 text-[#061c56] outline-none" placeholder="typing..."></input> 
                 <span className='flex gap-4'>
-                  <input className=" w-[50%] h-8 rounded-sm mb-2  px-3 text-[#E2E7E9] bg-[#6100c1]/80 outline-none" placeholder="First Name"></input>
-                  <input className=" w-[50%] h-8 rounded-sm mb-2  px-3 text-[#E2E7E9] bg-[#6100c1]/80 outline-none" placeholder="Last Name"></input>
+                  <input className=" w-[50%] h-8 rounded-sm mb-2  px-3 text-[#E2E7E9] bg-[#6100c1]/80 outline-none" placeholder="First Name" name='user_name'></input>
+                  <input className=" w-[50%] h-8 rounded-sm mb-2  px-3 text-[#E2E7E9] bg-[#6100c1]/80 outline-none" placeholder="Last Name" name='user_name2'></input>
                 </span>
                 <span className='flex gap-4'>
-                  <input className=" w-[50%] h-8 rounded-sm mb-2  px-3 text-[#E2E7E9] bg-[#6100c1]/80 outline-none" placeholder="Email"></input>
+                  <input className=" w-[50%] h-8 rounded-sm mb-2  px-3 text-[#E2E7E9] bg-[#6100c1]/80 outline-none" placeholder="Email" name='user_email'></input>
                   <input className=" w-[50%] h-8 rounded-sm mb-2  px-3 text-[#E2E7E9] bg-[#6100c1]/80 outline-none" placeholder="Role"></input>
                 </span>
-                <span className='flex'><input className= 'px-3 py-2 w-fit rounded  bg-[#E2E7E9]/90 text-[#6100c1]/80 uppercase text-sm font-semibold hover:text-white' type='submit' value='send message'></input></span>
+                <span className='flex'><input className= 'px-3 py-2 w-fit rounded  bg-[#E2E7E9]/90 text-[#6100c1]/80 uppercase text-sm font-semibold hover:text-white' name='message' type='submit' value='send message'></input></span>
             </span>
         </span>
         <div className='flex flex-col lg:gap-7 gap-3'>
@@ -144,7 +165,7 @@ const Lagos = () => {
               <span className='text-xl opacity-80 font-medium'>info@edenventuregroup.com</span>
             </div>
             <div className='flex '>
-                <img src={Logo} className='lg:w-fit w-32 h-16 lg:h-20 opacity-90' alt=''></img>
+                <img src={Logo} className='lg:w-44 w-32 h-16 lg:h-20 opacity-90' alt=''></img>
             </div>
             <div className='flex lg:gap-3 gap-1'>
                 <span className='p-1 bg-[#E2E7E9]/80 rounded-md'><a href='https://www.linkedin.com/company/evgnigeria/?viewAsMember=true' rel='noreferrer'><FaLinkedinIn className='lg:w-4 w-2 h-2 lg:h-4 text-[#000000]/90'/></a></span>
@@ -154,6 +175,15 @@ const Lagos = () => {
             </div>
         </div>
       </div>
+      {showPopup && (
+        <div className='fixed top-0 left-0 w-full h-full flex justify-center items-center bg-gray-800 bg-opacity-75'>
+          <div className='bg-white p-8 rounded-lg shadow-lg'>
+            <h2 className='text-xl font-semibold mb-4'>Your story has been shared. Thank you!</h2>
+            <button onClick={() => setShowPopup(false)} className='mt-4 px-4 py-2 bg-[#6100c1]/80 text-white rounded-md hover:[#6100c1]
+            '>Close</button>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

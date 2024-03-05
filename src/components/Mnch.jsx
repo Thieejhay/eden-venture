@@ -41,7 +41,7 @@ const Mnch = () => {
   // const [isHovered3, setIsHovered3] = useState(false);
   return (
     <div className='flex flex-col w-screen font-barlow overflow-clip'>
-      <Link to='/'><div className='flex z-50 absolute lg:left-16 left-3 top-2 lg:top-6'><img className='lg:w-fit w-32 h-16 lg:h-20 opacity-90' alt='' src={Logo}></img></div></Link>
+      <Link to='/'><div className='flex z-50 absolute lg:left-16 left-3 top-2 lg:top-6'><img className='lg:w-44 w-32 h-16 lg:h-20 opacity-90' alt='' src={Logo}></img></div></Link>
       <div className='flex flex-col h-[30rem] justify-end items-center bg-cover bg-center' style={{ backgroundImage: `url(${banner})` }}>
         <span className=' lg:text-6xl text-xl  text-center items-center justify-center flex font-bold text-[#E2E7E9]/90 tracking-wider uppercase'>Maternal,Newborn </span>
         <span className=' lg:text-6xl text-xl  text-center items-center justify-center flex font-bold text-[#E2E7E9]/90 mb-28 tracking-wider uppercase'> and child health (MNCH)</span>
@@ -57,7 +57,7 @@ const Mnch = () => {
             <span className='lg:text-lg text-justify lg:text-start text-base font-medium opacity-80 '>We are joining hands with Mothers, fathers, healthcare workers, experts, policymakers, advocates, communities, and stakeholders to rewrite the narrative, through initiatives aimed at increasing equitable access to essential healthcare services, and medical innovation, promoting maternal education, empowering communities, and changing social attitudes.</span>
             <span className='text-lg font-extrabold opacity-80 w-[45rem] '>Become an MNCH Champion today!</span>
           </span>
-          <span className='lg:w-[25rem] w-fit lg:h-[32rem] rounded-md lg:absolute right-24 top-6'>
+          <span className='lg:w-[25rem] w-fit lg:h-[32rem] rounded-md lg:absolute right-16 top-6'>
             <img className='w-full h-full object-cover rounded-md' src={about} alt=''></img>
           </span>
         </div>
