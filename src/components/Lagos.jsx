@@ -135,11 +135,8 @@ const Lagos = () => {
               </div>
               
           </div>
-          {/* <div className='flex flex-col items-center justify-center w-screen lg:py-12 py-8 px-4 gap-5 bg-[#000000]/80'>
-            <Link to='/register'><span className='flex items-center lg:px-5 px-3 py-2 border-none rounded-md text-[#6100c1]/80 w-fit font-medium text-xl bg-[#E2E7E9]/90'>Register</span></Link>
-            <span className='text-xl font-semibold text-center text-[#E2E7E9] lg:w-[35rem]'>Join other brave champions and stakeholders for our upcoming summit #transformingtogethersummit</span>
-          </div> */}
         </div>
+        <div className='flex justify-center items-center mb-6'><Link to='/register'><span className='flex items-center lg:px-12 px-3 py-5 border-none rounded-md bg-[#6100c1]/70 w-fit text-3xl text-[#E2E7E9]/90 uppercase'>Register</span></Link></div>
       </div>
       <div className='flex flex-col lg:flex-row gap-6 lg:gap-36 bg-[#6100c1] px-4 py-10 lg:justify-center lg:items-center'>
         <span className='flex flex-col gap-2'>
