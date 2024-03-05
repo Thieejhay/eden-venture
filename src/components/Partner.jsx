@@ -38,7 +38,7 @@ const Partner = () => {
                 <SwiperSlide className='flex flex-col relative overflow-hidden box-border' key={i}>
                     <div className='flex'><img src={swiper.img} alt='' className='w-full lg:h-56 h-24 rounded-3xl box-border'/></div>
                     <div className='flex flex-col mt-4'>
-                        <span className='lg:text-lg text-base  font-lightlg:font-normal text-[#E2E7E9]/90 uppercase'>{swiper.name}</span>
+                        <span className='lg:text-lg text-base  font-light lg:font-normal text-[#E2E7E9]/90 uppercase'>{swiper.name}</span>
                         <span className='flex flex-col gap-2'>
                             <span className='text-sm font-extralight text-[#E2E7E9]/50 uppercase'>{swiper.title}</span>
                             <a href={swiper.linkdn} target='_blank' rel='noreferrer'><FaLinkedinIn className='lg:w-4 w-4 h-4 lg:h-6 text-[#E2E7E9]/90'/></a>

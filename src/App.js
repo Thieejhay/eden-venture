@@ -1,8 +1,13 @@
 import React from "react";
+import './css/global.css';
 import Home from "./components/Home";
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Profile from "./components/Profile";
 import Wecreate from "./components/Wecreate";
+import Mnch from "./components/Mnch";
+import Abuja from "./components/Abuja";
+import Lagos from "./components/Lagos";
+import Register from "./components/Register";
 
 
 
@@ -18,6 +23,18 @@ function App() {
         </Route>
         <Route path='/wecreate'>
           <Wecreate />
+        </Route>
+        <Route path='/mnch' >
+          <Mnch />
+        </Route>
+        <Route path='/abuja-submit'>
+          <Abuja />
+        </Route>
+        <Route path='/Lagos-submit'>
+          <Lagos />
+        </Route>
+        <Route path='/register'>
+          <Register />
         </Route>
       </Switch>
     </Router>

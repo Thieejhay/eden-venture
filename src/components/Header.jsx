@@ -22,7 +22,7 @@ const Header = () => {
               <div className='hidden lg:flex justify-center items-center lg:gap-12 gap-3 text-white'>
                 <Link to='/profile'><span className= 'lg:font-bold font-light uppercase lg:text-base text-xs hover:text-[#6100c1] cursor-pointer text-[#E2E7E9]/90'>About us</span></Link>
                 <span className='lg:font-bold font-light uppercase lg:text-base text-xs hover:text-[#6100c1] cursor-pointer text-[#E2E7E9]/90' onClick = {() => {setToggleInitiative(true)}}>Initiatives</span>
-                <span className='lg:font-bold font-light uppercase lg:text-base text-xs hover:text-[#6100c1] cursor-pointer text-[#E2E7E9]/90'>News</span>
+                <Link to='/mnch'><span className='lg:font-bold font-light uppercase lg:text-base text-xs hover:text-[#6100c1] cursor-pointer text-[#E2E7E9]/90'>mnch</span></Link>
                 <span className='lg:font-bold font-light uppercase lg:text-base text-xs hover:text-[#6100c1] cursor-pointer text-[#E2E7E9]/90'>Donate</span>
               </div>
               <div className='flex justify-center items-center'>

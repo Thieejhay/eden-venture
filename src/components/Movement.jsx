@@ -23,7 +23,7 @@ const Movement = () => {
     <div className='flex flex-col bg-[#1F389F]/95 w-screen mt-4'>
         <div className='px-4 lg:px-0'>
             <div className='flex items-center justify-center w-full lg:gap-12 gap-2'>
-                <div className='flex items-center lg:h-24 h-20 lg:text-4xl text-lg lg:font-bold font-medium lg:tracking-wider text-[#ffffff]'>Join the movement?</div>
+                <div className='flex items-center lg:h-24 h-20 lg:text-4xl text-lg lg:font-bold font-medium lg:tracking-wider text-[#ffffff]'>Join the movement</div>
                 
                     {/* <span className='uppercase lg:text-lg text-base font-normal text-white'>Join the movement</span> */}
                     <form className='relative flex' ref={form} onSubmit={sendEmail}>

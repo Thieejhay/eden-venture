@@ -19,6 +19,25 @@ import Habeeb from '../assets/profile/Habeeb.png';
 import Adesua from '../assets/profile/Adesua.png';
 import Eniola from '../assets/profile/Eniola.png';
 import Otu from '../assets/profile/Otu.png';
+import Aproko from '../assets/profile/Aproko Doctor.png';
+import Amara from '../assets/profile/Amara Nwankpa.png';
+import Joyce from '../assets/profile/Dr. Joyce Omatseye.png';
+import Maryam from '../assets/profile/Maryam Hassan Bukar (Alhanislam).png';
+import Nafisa from '../assets/profile/Nafisa Atiku-Adejuwon.png';
+import Tade from '../assets/profile/Tade Alalade.png';
+import Saratu from '../assets/profile/Saratu Kassim.png';
+// import Ireti from '../assets/profile/senator-ireti-kingibe.png';
+// import Nabila from '../assets/profile/Nabila-Aguele-Photo-Cropped.png';
+// import Judith from '../assets/profile/Dr Judith-Ann Walker.png';
+// import Abudu from '../assets/profile/Dr Abdu Mukhtar.png';
+// import Salma from '../assets/profile/Dr Salma Special Advisor.png';
+// import Tunji from '../assets/profile/Tunji-Alausa.png';
+// import May from '../assets/profile/Mrs_Maryam_Uwais.png';
+import Prof from '../assets/profile/Headshot.png';
+// import Nneka from '../assets/profile/Dr Nneka Mobisson.png';
+import Adedolapo from '../assets/profile/Adedolapo Fasawe.png';
+import Tola from '../assets/profile/Tola.png';
+
 
 
 
@@ -193,6 +212,188 @@ export const swiper = [
     },
 ]
 
+export const speakers = [
+    {
+        id: 0,
+        name: ' Dr. Chinonso Egemba⁠',
+        title: 'AKA Aproko Doctor - Medical Doctor and health influencer',
+        img: Aproko
+
+    },
+    {
+        id: 1,
+        name: 'Dr. Joyce Omatseye',
+        title: "Founder of Ara Nini Health and a health influencer",
+        img: Joyce
+
+    },
+    {
+        id: 2,
+        name: "Amara Nwankpa",
+        title: "Director of the Public Policy Initiative Shehu Musa Yar'Adua Foundation",
+        img: Amara
+
+    },
+    {
+        id: 3,
+        name: 'Maryam Hassan Bukar',
+        title: 'Founder of Creative Cultural Revival (CURE) and Curator of @TrueMyVoice- Collective of Poets for Digital Advocacy',
+        img: Maryam
+
+    },
+    {
+        id: 4,
+        name: 'Nafisa Atiku-Adejuwon',
+        title: "Program Officer for Gender Justice at the Shehu Musa Yar'Adua Foundation",
+        img: Nafisa
+
+    },
+    {
+        id: 5,
+        name: 'Saratu Kassim',
+        title: 'Founder of Fertility Support Awareness and Aid Initiative',
+        img: Saratu
+
+    },
+    {
+        id: 6,
+        name: 'Tade Alalade',
+        title: 'Founder of BeiBei Haven',
+        img: Tade
+
+    },
+    // {
+    //     id: 7,
+    //     name: 'Name name ',
+    //     title: 'title',
+    //     img: ''
+
+    // },
+    // {
+    //     id: 8,
+    //     name: 'Name name ',
+    //     title: 'title',
+    //     img: ''
+
+    // },
+    // {
+    //     id: 9,
+    //     name: 'Name name ',
+    //     title: 'title',
+    //     img: ''
+
+    // },
+    // {
+    //     id: 10,
+    //     name: 'Name name ',
+    //     title: 'title',
+    //     img: ''
+
+    // },
+]
+
+
+export const speakers1 = [
+    
+    {
+        id: 5,
+        name: 'Tola Sunmonu Balogun',
+        title: 'Associate Partner McKinsey &  Company',
+        img: Tola
+
+    },
+    {
+        id: 6,
+        name: 'Saratu Kassim',
+        title: 'Founder of Fertility Support Awareness and Aid Initiative',
+        img: Saratu
+
+    },
+    {
+        id: 7,
+        name: 'Nafisa Atiku-Adejuwon',
+        title: "Program Officer for Gender Justice at the Shehu Musa Yar'Adua Foundation",
+        img: Nafisa
+
+    },
+]
+
+
+export const speakers2 = [
+    {
+        id: 1,
+        name: 'Dr. Bosede Bukola AFOLABI',
+        title: 'Professor of Obstetrics and Gynaecology in the College of Medicine, University of Lagos.',
+        img: Prof
+
+    },
+    // {
+    //     id: 2,
+    //     name: 'Dr Judith-Ann Walker',
+    //     title: 'title',
+    //     img: Nneka
+
+    // },
+    {
+        id: 3,
+        name: 'Dr. (Mrs) Adedolapo Fasawe',
+        title: 'Mandate Secretary (Commissioner) of Health Services & Environment in the Federal Capital Territory Administration (FCTA), Abuja',
+        img: Adedolapo
+
+    },
+    {
+        id: 0,
+        name: 'Tade Alalade',
+        title: 'Maternal Health Champion and Fertility advocate',
+        img: Tade
+
+    },
+    // {
+    //     id: 4,
+    //     name: 'Falana',
+    //     title: 'performing artiste',
+    //     img: Nabila
+
+    // },
+    
+]
+
+
+// {
+    //     id: 0,
+    //     name: 'Senator Ireti Kingibe',
+    //     title: 'title',
+    //     img: Ireti
+
+    // },
+    // {
+    //     id: 1,
+    //     name: 'Nabila Aguele',
+    //     title: 'title',
+    //     img: Nabila
+
+    // },
+    // {
+    //     id: 2,
+    //     name: 'Dr Judith-Ann Walker',
+    //     title: 'title',
+    //     img: Judith
+
+    // },
+    // {
+    //     id: 3,
+    //     name: 'Dr Abdu Mukhtar',
+    //     title: 'title',
+    //     img: Abudu
+
+    // },
+    // {
+    //     id: 4,
+    //     name: 'Dr Salma ',
+    //     title: 'title',
+    //     img: Salma
+
+    // },
 
 
 
