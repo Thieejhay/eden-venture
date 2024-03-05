@@ -4,7 +4,6 @@ import Logo from '../assets/eden.png';
 import Footer from './Footerr';
 import { Link } from 'react-router-dom';
 import banner from '../assets/mnch11.png';
-import banner1 from '../assets/mnch11 copy.png';
 import about from '../assets/mnch2.png';
 import about2 from '../assets/mnch6.png';
 import about3 from '../assets/mnch5.png';
@@ -41,16 +40,13 @@ const Mnch = () => {
   const [isHovered2, setIsHovered2] = useState(false);
   // const [isHovered3, setIsHovered3] = useState(false);
   return (
-    <div className='flex flex-col w-screen font-barlow'>
+    <div className='flex flex-col w-screen font-barlow overflow-clip'>
       <Link to='/'><div className='flex z-50 absolute lg:left-16 left-3 top-2 lg:top-6'><img className='lg:w-fit w-32 h-16 lg:h-20 opacity-90' alt='' src={Logo}></img></div></Link>
-      <div className='md:flex hidden flex-col lg:h-[30rem] h-[25rem] justify-end items-center' style={{ backgroundImage: `url(${banner})` }}>
+      <div className='flex flex-col h-[30rem] justify-end items-center bg-cover bg-center' style={{ backgroundImage: `url(${banner})` }}>
         <span className=' lg:text-6xl text-xl  text-center items-center justify-center flex font-bold text-[#E2E7E9]/90 tracking-wider uppercase'>Maternal,Newborn </span>
         <span className=' lg:text-6xl text-xl  text-center items-center justify-center flex font-bold text-[#E2E7E9]/90 mb-28 tracking-wider uppercase'> and child health (MNCH)</span>
       </div>
-      <div className='flex md:hidden flex-col lg:h-[30rem] h-[25rem] justify-end items-center' style={{ backgroundImage: `url(${banner1})` }}>
-        <span className=' lg:text-6xl text-xl  text-center items-center justify-center flex font-bold text-[#E2E7E9]/90 tracking-wider uppercase'>Maternal,Newborn </span>
-        <span className=' lg:text-6xl text-xl  text-center items-center justify-center flex font-bold text-[#E2E7E9]/90 mb-28 tracking-wider uppercase'> and child health (MNCH)</span>
-      </div>
+      
       <div className='flex flex-col lg:py-10 py-5 lg:gap-5 gap-2'>
         <div className='flex flex-col gap-2 px-4 lg:px-24 relative'>
           <span className='flex flex-col lg:gap-3 gap-1'>
@@ -112,7 +108,7 @@ const Mnch = () => {
       </div>
       <div className='flex lg:py-10 py-5 px-4 lg:px-0 items-center justify-center '>
         <div className='flex lg:flex-row flex-col py-3 lg:gap-10 gap-5 z-50'>
-          <Link to='/lagos-submit'><span className={`flex lg:h-[22rem] h-[18rem] w-fit flex-col shadow-2xl py-5 lg:px-24 px-4 gap-4 lg:gap-6 rounded-md bg-white text-[#000000] relative transition duration-300 ${isHovered ? 'bg-opacity-95' : ''}`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+          <Link to='/lagos-submit'><span className={`flex lg:h-[22rem] h-[19rem] w-fit flex-col shadow-2xl py-5 lg:px-24 px-4 gap-4 lg:gap-6 rounded-md bg-white text-[#000000] relative transition duration-300 ${isHovered ? 'bg-opacity-95' : ''}`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
             <div className="absolute inset-0 bg-black opacity-0 transition duration-300 hover:opacity-50 hover:rounded-md"></div>
             <span className='absolute lg:left-0 right-0 bottom-[0.12rem]'><img src={about3} alt='' className='lg:h-80 h-52 opacity-30'></img></span>
             <span className='text-xl font-medium uppercase w-[20rem] tracking-wider'>Transforming together summit <span className='uppercase font-bold'>lagos</span></span>

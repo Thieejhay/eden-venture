@@ -1,7 +1,6 @@
 import {React, useEffect, useState } from 'react';
 import Logo from '../assets/eden.png';
 import banner from '../assets/mnch13.png';
-import banners from '../assets/mnch13 copy.png';
 import banner1 from '../assets/55.png';
 import banner2 from '../assets/mnch92.png';
 // import abj from '../assets/mnch7.png';
@@ -31,11 +30,7 @@ const Lagos = () => {
   return (
     <div className='flex flex-col w-screen font-barlow'>
         <Link to='/'><div className='flex z-50 absolute lg:left-16 left-3 top-2 lg:top-6'><img className='lg:w-fit w-32 h-16 lg:h-20 opacity-90' alt='' src={Logo}></img></div></Link>
-      <div className='md:flex hidden flex-col lg:h-[30rem] h-[25rem] justify-end items-center' style={{ backgroundImage: `url(${banner})` }}>
-            <img src={banner1} alt='' className=' lg:w-[30rem] w-[20rem]'></img>
-            <Link to='/register'><span className='flex items-center lg:px-5 px-3 py-2 border-none rounded-md text-[#6100c1]/80 w-fit font-medium text-xl bg-[#E2E7E9]/90 mb-20'>Register</span></Link>
-      </div>
-      <div className='flex md:hidden flex-col lg:h-[30rem] h-[25rem] justify-end items-center' style={{ backgroundImage: `url(${banners})` }}>
+      <div className='flex flex-col lg:h-[30rem] h-[25rem] justify-end items-center bg-cover bg-center' style={{ backgroundImage: `url(${banner})` }}>
             <img src={banner1} alt='' className=' lg:w-[30rem] w-[20rem]'></img>
             <Link to='/register'><span className='flex items-center lg:px-5 px-3 py-2 border-none rounded-md text-[#6100c1]/80 w-fit font-medium text-xl bg-[#E2E7E9]/90 mb-20'>Register</span></Link>
       </div>

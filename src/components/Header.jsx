@@ -32,13 +32,15 @@ const Header = () => {
 
             {
               toggleMenu && (
-                <motion.div className='flex items-end flex-col gap-12 text-start justify-start bg-white z-auto p-8 right-0 fixed w-[70%] bottom-0 lg:hidden h-screen rounded-l' initial={{ x:'100vw'}}
+                <motion.div className='flex justify-end gap-12  bg-white z-auto pt-8 pr-4 right-0 fixed w-screen top-0 lg:hidden h-[23rem] rounded-l' initial={{ x:'100vw'}}
                 animate={{ x: 0}} transition={{type: 'spring', duration: 2, bounce: 0.3}}>
-                  <AiOutlineClose color='#6100c1' size={26} onClick = {() => {setToggleMenu(false)}}/>
-                  <Link to='/profile'><span onClick = {() => {setToggleMenu(false)}} className='text-[#6100c1]'>About us</span></Link> 
-                  <Link to='/wecreate'><span onClick = {() => {setToggleMenu(false)}} className='text-[#6100c1]'>Initiatives</span></Link>
-                  <span onClick = {() => {setToggleMenu(false)}} className='text-[#6100c1]'>News</span>
-                  <span onClick = {() => {setToggleMenu(false)}} className='text-[#6100c1]'>Donate</span>
+                  <div className='flex flex-col gap-6'>
+                    <AiOutlineClose color='#6100c1' className='mb-2 flex ml-12' size={26} onClick = {() => {setToggleMenu(false)}}/>
+                    <Link to='/profile'><span onClick = {() => {setToggleMenu(false)}} className='text-[#6100c1] text-xl'>About us</span></Link> 
+                    <Link to='/wecreate'><span onClick = {() => {setToggleMenu(false)}} className='text-[#6100c1] text-xl'>Initiatives</span></Link>
+                    <Link to='/mnch'><span onClick = {() => {setToggleMenu(false)}} className='text-[#6100c1]' text-xl>MNCH</span></Link>
+                    <span onClick = {() => {setToggleMenu(false)}} className='text-[#6100c1]'>Donate</span>
+                  </div>
                 </motion.div>
               )
             }
