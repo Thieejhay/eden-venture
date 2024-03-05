@@ -137,7 +137,7 @@ const Abuja = () => {
           </div>
           <div className='flex flex-col items-center w-screen justify-center lg:py-12 py-8 px-4 gap-5 bg-[#000000]/80'>
             <Link to='/register'><span className='flex items-center lg:px-5 px-3 py-2 border-none rounded-md text-[#6100c1]/80 w-fit font-medium text-xl bg-[#E2E7E9]/90'>Register</span></Link>
-            <span className='text-xl font-semibold text-center text-[#E2E7E9] lg:w-[35rem]'>Join other brave champions and stakeholders for our upcoming submit #transformingtogethersummit</span>
+            <span className='text-xl font-semibold text-center text-[#E2E7E9] lg:w-[35rem]'>Join other brave champions and stakeholders for our upcoming summit #transformingtogethersummit</span>
           </div>
         </div>
       </div>
