@@ -53,7 +53,7 @@ const Lagos = () => {
         <Link to='/'><div className='flex z-50 absolute lg:left-16 left-3 top-2 lg:top-6'><img className='lg:w-44 w-32 h-16 lg:h-20 opacity-90' alt='' src={Logo}></img></div></Link>
       <div className='flex flex-col lg:h-[30rem] h-[25rem] justify-end items-center bg-cover bg-center' style={{ backgroundImage: `url(${banner})` }}>
             <img src={banner1} alt='' className=' lg:w-[30rem] w-[20rem]'></img>
-            <Link to='/register'><span className='flex items-center lg:px-5 px-3 py-2 border-none rounded-md text-[#6100c1]/80 w-fit font-medium text-xl bg-[#E2E7E9]/90 mb-20'>Register</span></Link>
+            <Link to='/register'><span className='flex items-center lg:px-12 px-3 lg:py-5 py-2 uppercase border-none rounded-md text-[#6100c1]/80 w-fit font-medium text-2xl bg-[#E2E7E9]/90 mb-20'>Register</span></Link>
       </div>
       <div className='flex flex-col'>
         <div className='flex justify-between items-center py-10 lg:px-32 px-4 bg-[#6100c1]/90  border-b border-white'>
