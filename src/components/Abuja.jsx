@@ -82,14 +82,15 @@ const Abuja = () => {
           <span className='flex flex-col lg:w-[42rem] text-[#6100c1]/90 gap-2'>
             <span className='px-4 py-1 bg-[#E2E7E9] text-xl rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>10:00 am: Attendee Arrival & registration</span>
             <span className='px-4 py-1 bg-[#E2E7E9] text-xl rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>10:30 am: Keynote speech</span>
-            <span className='px-4 py-1 bg-[#E2E7E9] text-xl rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>10: 45 am: Opening Speech</span>
-            <span className='px-4 py-1 bg-[#E2E7E9] text-xl rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>11: 00 am: Panel Discussion: "Policy Pathways: Reforming Maternal, Newborn, and Child Health in Nigeria"</span>
-            <span className='px-4 py-1 bg-[#E2E7E9] text-xl rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>12:30 pm: Refreshments and Break</span>
-            <span className='px-4 py-1 bg-[#E2E7E9] text-xl rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>1:30 pm - Panel Discussion- Social Impact x Innovation: Tackling women’s healthcare in Nigeria</span>
-            <span className='px-4 py-1 bg-[#E2E7E9] text-xl rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>3:00 pm: Closing Remarks & Call to Action</span>
+            <span className='px-4 py-1 bg-[#E2E7E9] text-xl rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>11: 15 am:  Panel Discussion: "Policy Pathways: Reforming Maternal, Newborn, and Child Health in Nigeria"</span>
+            <span className='px-4 py-1 bg-[#E2E7E9] text-xl rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>12:00 pm: Refreshments and Break</span>
+            <span className='px-4 py-1 bg-[#E2E7E9] text-xl rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>12:30 pm- 1:00pm: Deep Dive: “Nigeria’s MNCH Landscape: Saving 2 Million Lives by 2030</span>
+            <span className='px-4 py-1 bg-[#E2E7E9] text-xl rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>1:30pm  - Panel Discussion- Social Impact x Innovation: Tackling women’s healthcare in Nigeria</span>
+            <span className='px-4 py-1 bg-[#E2E7E9] text-xl rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>2:30 pm: Music Performance by Falana</span>
+            <span className='px-4 py-1 bg-[#E2E7E9] text-xl rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>3:00 pm: Call to Action</span>
+            <span className='px-4 py-1 bg-[#E2E7E9] text-xl rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>3:30 pm: Closing Remarks & Call to Action</span>
+            <span className='px-4 py-1 bg-[#E2E7E9] text-xl rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>3:30 pm - 5:00 pm: Networking & Medical Screening </span>
             <span className='px-4 py-1 bg-[#E2E7E9] text-xl rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>10:00 am - 6:00 pm: Medical screenings (Cervical Cancer, Sickle Cell, PCOS, General women’s health)</span>
-            <span className='px-4 py-1 bg-[#E2E7E9] text-xl rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>6:00 pm- 9:00 pm: Networking Mixer </span>
-            <span className='px-4 py-1 bg-[#E2E7E9] text-xl rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>9:00 pm: Performance by the artiste Falana</span>
           </span>
           <span className='lg:w-[21rem] w-fit lg:h-[28rem] lg:mt-12 bg-white rounded-md flex relative'>
             <img className='w-full h-full object-cover rounded-md' src={banner2} alt=''></img>

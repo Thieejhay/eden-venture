@@ -47,10 +47,10 @@ const Mnch = () => {
         <span className=' lg:text-6xl text-xl  text-center items-center justify-center flex font-bold text-[#E2E7E9]/90 mb-28 tracking-wider uppercase'> and child health (MNCH)</span>
       </div>
       
-      <div className='flex flex-col lg:py-10 py-5 lg:gap-5 gap-2'>
+      <div className='flex lg:hidden flex-col lg:py-10 py-5 lg:gap-5 gap-2'>
         <div className='flex flex-col gap-2 px-4 lg:px-24 relative'>
           <span className='flex flex-col lg:gap-3 gap-1'>
-            <span className='lg:text-lg text-justify lg:text-start text-base font-medium opacity-80 lg:w-[47rem] '><span className='text-4xl'>B</span>efore you finish reading these words, a mother or child in Nigeria may have tragically lost their life, not from insecurity, economic crisis or political unrest, but from grappling with a silent crisis – Maternal, Newborn, and Child Health (MNCH). According to the Gates Foundation’s <HashLink to='#report' smooth><span className=' underline text-blue-900 '>2023 Goalkeepers Report</span></HashLink>, Nigeria holds the chilling title of third-highest maternal mortality rate in the world. It is unacceptable that childbirth is still a death sentence daily for 800 mothers and babies in Nigeria.</span>
+            <span className='lg:text-lg text-justify lg:text-start text-base font-medium opacity-80 lg:w-[65%] '><span className='text-4xl'>B</span>efore you finish reading these words, a mother or child in Nigeria may have tragically lost their life, not from insecurity, economic crisis or political unrest, but from grappling with a silent crisis – Maternal, Newborn, and Child Health (MNCH). According to the Gates Foundation’s <HashLink to='#report' smooth><span className=' underline text-blue-900 '>2023 Goalkeepers Report</span></HashLink>, Nigeria holds the chilling title of third-highest maternal mortality rate in the world. It is unacceptable that childbirth is still a death sentence daily for 800 mothers and babies in Nigeria.</span>
             <span className='lg:text-lg text-justify lg:text-start text-base font-medium opacity-80 lg:w-[47rem]  '>This is not just a statistic; it is a baby, daughter, sister, neighbour, wife, friend, colleague, in-law or partner lost. These tragic stories are not broadcast to millions of viewers daily, but they are stories that still must be told. They represent the shattered dreams, lost potentials, and heartbreak of countless families across the nation.</span>
             <span className='lg:text-lg text-justify lg:text-start text-base font-medium opacity-80 lg:w-[47rem] '>The giant of Africa bears a heavy burden when it comes to MNCH. With a population exceeding 200 million, it is home to one of the highest maternal mortality rates in the world. According to UNICEF, Nigeria accounts for nearly 20% of global maternal deaths, with approximately 814 mothers losing their lives for every 100,000 live births. Behind each number lies the story of a mother who embarked on the journey of childbirth with hope in her heart, only to encounter obstacles. Limited access to quality healthcare facilities, inadequate prenatal care, and cultural beliefs often stand as barriers between these women and the care they desperately need. For many, the choice between seeking medical assistance and adhering to traditional practices is a dilemma fraught with risks.</span>
             <span className='lg:text-lg text-justify lg:text-start text-base font-medium opacity-80 '>Yet, despite this heartbreaking reality, the glimmer of hope is YOU and I. Women can navigate the hurdles of childbirth with the right care at the right time, support, become champions for change, and build bright futures for themselves, their children, and their families. We envision a world where childbirth is not a gamble. We are fueled by a single, powerful vision: to drastically reduce maternal and infant mortality rates in Nigeria. This is a revolution – a fight for every mother and child to have the quality healthcare they deserve.</span>
@@ -61,6 +61,23 @@ const Mnch = () => {
             <img className='w-full h-full object-cover rounded-md' src={about} alt=''></img>
           </span>
         </div>
+      </div>
+      <div className='hidden lg:flex px-24 flex-col lg:py-10 py-5 lg:gap-5 gap-2'>
+        <div className='flex'>
+          <span className='flex flex-col lg:gap-3 gap-1 w-[70%]'>
+            <span className='lg:text-lg text-justify lg:text-start text-base font-medium opacity-80 pr-12'><span className='text-4xl'>B</span>efore you finish reading these words, a mother or child in Nigeria may have tragically lost their life, not from insecurity, economic crisis or political unrest, but from grappling with a silent crisis – Maternal, Newborn, and Child Health (MNCH). According to the Gates Foundation’s <HashLink to='#report' smooth><span className=' underline text-blue-900 '>2023 Goalkeepers Report</span></HashLink>, Nigeria holds the chilling title of third-highest maternal mortality rate in the world. It is unacceptable that childbirth is still a death sentence daily for 800 mothers and babies in Nigeria.</span>
+            <span className='lg:text-lg text-justify lg:text-start text-base font-medium opacity-80 pr-12 '>This is not just a statistic; it is a baby, daughter, sister, neighbour, wife, friend, colleague, in-law or partner lost. These tragic stories are not broadcast to millions of viewers daily, but they are stories that still must be told. They represent the shattered dreams, lost potentials, and heartbreak of countless families across the nation.</span>
+            <span className='lg:text-lg text-justify lg:text-start text-base font-medium opacity-80 pr-12'>The giant of Africa bears a heavy burden when it comes to MNCH. With a population exceeding 200 million, it is home to one of the highest maternal mortality rates in the world. According to UNICEF, Nigeria accounts for nearly 20% of global maternal deaths, with approximately 814 mothers losing their lives for every 100,000 live births. Behind each number lies the story of a mother who embarked on the journey of childbirth with hope in her heart, only to encounter obstacles. Limited access to quality healthcare facilities, inadequate prenatal care, and cultural beliefs often stand as barriers between these women and the care they desperately need. For many, the choice between seeking medical assistance and adhering to traditional practices is a dilemma fraught with risks.</span>
+          </span>
+          <span className='flex w-[30%]'>
+            <img className='lg:w-[25rem] w-fit lg:h-[32rem] object-cover rounded-md' src={about} alt=''></img>
+          </span>
+        </div>
+        <span className='flex flex-col lg:gap-3 gap-1'>
+            <span className='lg:text-lg text-justify lg:text-start text-base font-medium opacity-80 '>Yet, despite this heartbreaking reality, the glimmer of hope is YOU and I. Women can navigate the hurdles of childbirth with the right care at the right time, support, become champions for change, and build bright futures for themselves, their children, and their families. We envision a world where childbirth is not a gamble. We are fueled by a single, powerful vision: to drastically reduce maternal and infant mortality rates in Nigeria. This is a revolution – a fight for every mother and child to have the quality healthcare they deserve.</span>
+            <span className='lg:text-lg text-justify lg:text-start text-base font-medium opacity-80 '>We are joining hands with Mothers, fathers, healthcare workers, experts, policymakers, advocates, communities, and stakeholders to rewrite the narrative, through initiatives aimed at increasing equitable access to essential healthcare services, and medical innovation, promoting maternal education, empowering communities, and changing social attitudes.</span>
+            <span className='text-lg font-extrabold opacity-80 '>Become an MNCH Champion today!</span>
+          </span>
       </div>
       <div className='flex flex-col lg:py-10 py-5 items-center gap-5'>
         <span className='flex text-3xl font-semibold opacity-90 uppercase'>Our MNCH champions</span>
@@ -104,7 +121,7 @@ const Mnch = () => {
       </div>
       <div className='flex flex-col items-center justify-center py-12 gap-5 bg-[#000000]/80'>
         <span className='px-4 py-2 uppercase w-fit rounded bg-[#6100c1] text-[#ffffff] text-base font-bold'>become a champion</span>
-        <span className='text-xl font-semibold text-center text-[#E2E7E9] lg:w-[35rem]'>Join other brave champions and stakeholders for our upcoming submit #transformingtogethersummit</span>
+        <span className='text-xl font-semibold text-center text-[#E2E7E9] lg:w-[35rem]'>Join other brave champions and stakeholders for our upcoming summit #transformingtogethersummit</span>
       </div>
       <div className='flex lg:py-10 py-5 px-4 lg:px-0 items-center justify-center '>
         <div className='flex lg:flex-row flex-col py-3 lg:gap-10 gap-5 z-50'>
