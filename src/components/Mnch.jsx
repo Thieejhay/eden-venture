@@ -121,7 +121,7 @@ const Mnch = () => {
       </div>
       <div className='flex flex-col items-center justify-center py-12 gap-5 bg-[#000000]/80'>
         <span className='px-4 py-2 uppercase w-fit rounded bg-[#6100c1] text-[#ffffff] text-base font-bold'>become a champion</span>
-        <span className='text-xl font-semibold text-center text-[#E2E7E9] lg:w-[35rem]'>Join other brave champions and stakeholders for our upcoming summit #transformingtogethersummit</span>
+        <span className='text-xl font-semibold text-center text-[#E2E7E9] lg:w-[35rem]'>Join other brave MNCH champions and stakeholders at our upcoming summits in Lagos and Abuja</span>
       </div>
       <div className='flex lg:py-10 py-5 px-4 lg:px-0 items-center justify-center '>
         <div className='flex lg:flex-row flex-col py-3 lg:gap-10 gap-5 z-50'>

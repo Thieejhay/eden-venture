@@ -216,8 +216,8 @@ export const swiper = [
 export const speakers = [
     {
         id: 0,
-        name: ' Dr. Chinonso Egemba⁠',
-        title: 'AKA Aproko Doctor - Medical Doctor and health influencer',
+        name: ' Dr. Chinonso Egemba AKA Aproko Doctor ',
+        title: 'Medical Doctor and health influencer',
         img: Aproko
 
     },
