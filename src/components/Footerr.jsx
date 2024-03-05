@@ -8,7 +8,7 @@ const Footerr = () => {
     <div className='flex justify-between w-screen lg:h-[18rem] lg:pt-20 lg:px-40 px-2 py-8 bg-[#6100c1] font-barlow'>
         <div className='flex flex-col gap-3 '>
             <div className='flex justify-center'>
-                <img src={Logo} className='w-fit h-10 lg:h-20 opacity-90' alt=''></img>
+                <img src={Logo} className='lg:w-fit w-32 h-16 lg:h-20 opacity-90' alt=''></img>
             </div>
             <div className='flex lg:gap-3 gap-1 justify-center'>
                 <span className='p-1 bg-[#E2E7E9]/80 rounded-md'><a href='https://www.linkedin.com/company/evgnigeria/?viewAsMember=true' rel='noreferrer'><FaLinkedinIn className='lg:w-4 w-2 h-2 lg:h-4 text-[#000000]/90'/></a></span>

@@ -4,6 +4,7 @@ import Logo from '../assets/eden.png';
 import Footer from './Footerr';
 import { Link } from 'react-router-dom';
 import banner from '../assets/mnch11.png';
+import banner1 from '../assets/mnch11 copy.png';
 import about from '../assets/mnch2.png';
 import about2 from '../assets/mnch6.png';
 import about3 from '../assets/mnch5.png';
@@ -41,8 +42,12 @@ const Mnch = () => {
   // const [isHovered3, setIsHovered3] = useState(false);
   return (
     <div className='flex flex-col w-screen font-barlow'>
-      <Link to='/'><div className='flex z-50 absolute lg:left-16 left-3 top-2 lg:top-6'><img className='w-fit h-16 lg:h-20 opacity-90' alt='' src={Logo}></img></div></Link>
-      <div className='flex flex-col lg:h-[30rem] h-[25rem] justify-end items-center' style={{ backgroundImage: `url(${banner})` }}>
+      <Link to='/'><div className='flex z-50 absolute lg:left-16 left-3 top-2 lg:top-6'><img className='lg:w-fit w-32 h-16 lg:h-20 opacity-90' alt='' src={Logo}></img></div></Link>
+      <div className='md:flex hidden flex-col lg:h-[30rem] h-[25rem] justify-end items-center' style={{ backgroundImage: `url(${banner})` }}>
+        <span className=' lg:text-6xl text-xl  text-center items-center justify-center flex font-bold text-[#E2E7E9]/90 tracking-wider uppercase'>Maternal,Newborn </span>
+        <span className=' lg:text-6xl text-xl  text-center items-center justify-center flex font-bold text-[#E2E7E9]/90 mb-28 tracking-wider uppercase'> and child health (MNCH)</span>
+      </div>
+      <div className='flex md:hidden flex-col lg:h-[30rem] h-[25rem] justify-end items-center' style={{ backgroundImage: `url(${banner1})` }}>
         <span className=' lg:text-6xl text-xl  text-center items-center justify-center flex font-bold text-[#E2E7E9]/90 tracking-wider uppercase'>Maternal,Newborn </span>
         <span className=' lg:text-6xl text-xl  text-center items-center justify-center flex font-bold text-[#E2E7E9]/90 mb-28 tracking-wider uppercase'> and child health (MNCH)</span>
       </div>
@@ -105,7 +110,7 @@ const Mnch = () => {
         <span className='px-4 py-2 uppercase w-fit rounded bg-[#6100c1] text-[#ffffff] text-base font-bold'>become a champion</span>
         <span className='text-xl font-semibold text-center text-[#E2E7E9] lg:w-[35rem]'>Join other brave champions and stakeholders for our upcoming submit #transformingtogethersummit</span>
       </div>
-      <div className='flex lg:py-10 py-5 px-4 lg:px-0 lg:items-center lg:justify-center '>
+      <div className='flex lg:py-10 py-5 px-4 lg:px-0 items-center justify-center '>
         <div className='flex lg:flex-row flex-col py-3 lg:gap-10 gap-5 z-50'>
           <Link to='/lagos-submit'><span className={`flex lg:h-[22rem] h-[18rem] w-fit flex-col shadow-2xl py-5 lg:px-24 px-4 gap-4 lg:gap-6 rounded-md bg-white text-[#000000] relative transition duration-300 ${isHovered ? 'bg-opacity-95' : ''}`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
             <div className="absolute inset-0 bg-black opacity-0 transition duration-300 hover:opacity-50 hover:rounded-md"></div>
@@ -251,7 +256,7 @@ const Mnch = () => {
                   </div>
                 )}
             </span>
-            <span className='flex text-center text-lg w-60 leading-none opacity-90'>Gates Foundation's 2023 Goalkeepers Report</span>
+            <span className='flex text-center text-lg lg:w-60 leading-none opacity-90'>Gates Foundation's 2023 Goalkeepers Report</span>
           </span>
         </span>
       </div>

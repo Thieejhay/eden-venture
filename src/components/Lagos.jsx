@@ -1,7 +1,8 @@
 import {React, useEffect, useState } from 'react';
 import Logo from '../assets/eden.png';
 import banner from '../assets/mnch13.png';
-import banner1 from '../assets/mnch4.png';
+import banners from '../assets/mnch13 copy.png';
+import banner1 from '../assets/55.png';
 import banner2 from '../assets/mnch92.png';
 // import abj from '../assets/mnch7.png';
 import { FaLinkedinIn,  FaInstagram, FaTwitter, FaYoutube, FaClock } from 'react-icons/fa';
@@ -29,8 +30,12 @@ const Lagos = () => {
 
   return (
     <div className='flex flex-col w-screen font-barlow'>
-        <Link to='/'><div className='flex z-50 absolute lg:left-16 left-3 top-2 lg:top-6'><img className='w-fit h-16 lg:h-20 opacity-90' alt='' src={Logo}></img></div></Link>
-      <div className='flex flex-col lg:h-[30rem] h-[25rem] justify-end items-center' style={{ backgroundImage: `url(${banner})` }}>
+        <Link to='/'><div className='flex z-50 absolute lg:left-16 left-3 top-2 lg:top-6'><img className='lg:w-fit w-32 h-16 lg:h-20 opacity-90' alt='' src={Logo}></img></div></Link>
+      <div className='md:flex hidden flex-col lg:h-[30rem] h-[25rem] justify-end items-center' style={{ backgroundImage: `url(${banner})` }}>
+            <img src={banner1} alt='' className=' lg:w-[30rem] w-[20rem]'></img>
+            <Link to='/register'><span className='flex items-center lg:px-5 px-3 py-2 border-none rounded-md text-[#6100c1]/80 w-fit font-medium text-xl bg-[#E2E7E9]/90 mb-20'>Register</span></Link>
+      </div>
+      <div className='flex md:hidden flex-col lg:h-[30rem] h-[25rem] justify-end items-center' style={{ backgroundImage: `url(${banners})` }}>
             <img src={banner1} alt='' className=' lg:w-[30rem] w-[20rem]'></img>
             <Link to='/register'><span className='flex items-center lg:px-5 px-3 py-2 border-none rounded-md text-[#6100c1]/80 w-fit font-medium text-xl bg-[#E2E7E9]/90 mb-20'>Register</span></Link>
       </div>
@@ -144,7 +149,7 @@ const Lagos = () => {
               <span className='text-xl opacity-80 font-medium'>info@edenventuregroup.com</span>
             </div>
             <div className='flex '>
-                <img src={Logo} className='w-fit h-16 lg:h-20 opacity-90' alt=''></img>
+                <img src={Logo} className='lg:w-fit w-32 h-16 lg:h-20 opacity-90' alt=''></img>
             </div>
             <div className='flex lg:gap-3 gap-1'>
                 <span className='p-1 bg-[#E2E7E9]/80 rounded-md'><a href='https://www.linkedin.com/company/evgnigeria/?viewAsMember=true' rel='noreferrer'><FaLinkedinIn className='lg:w-4 w-2 h-2 lg:h-4 text-[#000000]/90'/></a></span>
