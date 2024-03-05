@@ -1,42 +1,87 @@
-import React from 'react'
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import Logo from '../assets/eden.png';
 import Footerr from './Footerr';
+import { Link } from 'react-router-dom';
+import banner1 from '../assets/mnch12 copy.png';
 
 const Register = () => {
+  const form = useRef();
+  const [showPopup, setShowPopup] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_ai9a35h', 'template_n2j3rfj', form.current, 'eSMX_5yNJFbgAvpAb')
+      .then(
+        (result) => {
+          console.log(result.text);
+          e.target.reset();
+          setShowPopup(true); // Show the pop-up after successful submission
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
-    <div className='flex flex-col w-screen'>
-        <div className='flex'>
-            <span className='w-[35%] h-[27rem] bg-[#000000]'></span>
-            <div className='w-[65%] flex flex-col p-12 '>
-                <span className='flex flex-col gap-2'>
-                    <span className='uppercase text-xl font-semibold'>registartion</span>
-                    <hr className='w-full h-1 rounded bg-[#000000]'></hr>
-                </span>
-                <span className='flex justify-between pt-12'>
-                    <span className='flex flex-col gap-1'>
-                        <span className=' text-base font-medium'>Full Name</span>
-                        <input className=" w-[20rem] h-8 rounded px-2 border border-[#000000] outline-none"></input>
-                    </span>
-                    <span className='flex flex-col gap-1'>
-                        <span className=' text-base font-medium'>Country</span>
-                        <input className=" w-[20rem] h-8 rounded px-2 border border-[#000000] outline-none"></input>
-                    </span>
-                </span>
-                <span className='flex justify-between pb-12 mt-12'>
-                    <span className='flex flex-col gap-1'>
-                        <span className=' text-base font-medium'>Email</span>
-                        <input className=" w-[20rem] h-8 rounded px-2 border border-[#000000] outline-none"></input>
-                    </span>
-                    <span className='flex flex-col gap-1'>
-                        <span className=' text-base font-medium'>Role</span>
-                        <input className=" w-[20rem] h-8 rounded px-2 border border-[#000000] outline-none"></input>
-                    </span>
-                </span>
-                <span className='flex justify-center mt-6'><input className= 'px-60 py-2 w-fit rounded  text-[#E2E7E9]/90 bg-[#6100c1]/80 uppercase text-xl font-semibold ' type='submit' value='register'></input></span>
-            </div>
+    <div className='flex flex-col w-screen font-barlow'>
+      <div className='flex lg:flex-row flex-col'>
+        <Link to='/'>
+          <div className='flex z-50 absolute lg:left-16 left-3 top-2 lg:top-6'>
+            <img className='lg:w-fit w-32 h-16 lg:h-20 opacity-90' alt='' src={Logo}></img>
+          </div>
+        </Link>
+        <span className='lg:w-[35%] w-full h-[20rem] lg:h-[30rem] bg-[#000000]'>
+          <img className='w-full h-full' src={banner1} alt=''></img>
+        </span>
+        <div className='lg:w-[65%] flex flex-col lg:p-12 p-4 '>
+          <span className='flex flex-col gap-2'>
+            <span className='uppercase text-xl font-semibold'>registartion</span>
+            <hr className='w-full h-1 rounded bg-[#6100c1]/80'></hr>
+          </span>
+          <form onSubmit={sendEmail} ref={form}>
+            <span className='flex lg:flex-row flex-col gap-3 lg:gap-0 lg:justify-between pt-12'>
+              <span className='flex flex-col gap-1'>
+                <span className=' text-base font-medium'>Full Name</span>
+                <input name='user_name' className=' lg:w-[23rem] w-full h-8 rounded px-2 border border-[#000000] outline-none'></input>
+              </span>
+              <span className='flex flex-col gap-1'>
+                <span className=' text-base font-medium'>City</span>
+                <input name='user_city' className=' lg:w-[23rem] w-full h-8 rounded px-2 border border-[#000000] outline-none'></input>
+              </span>
+            </span>
+            <span className='flex lg:flex-row flex-col gap-3 lg:gap-0 lg:justify-between lg:pb-12 lg:mt-12 mt-3'>
+              <span className='flex flex-col gap-1'>
+                <span className=' text-base font-medium'>Email</span>
+                <input name='user_email' className=' lg:w-[23rem] w-full h-8 rounded px-2 border border-[#000000] outline-none'></input>
+              </span>
+              <span className='flex flex-col gap-1'>
+                <span className=' text-base font-medium'>Role</span>
+                <input name='user_role' className=' lg:w-[23rem] w-full h-8 rounded px-2 border border-[#000000] outline-none'></input>
+              </span>
+            </span>
+            <span className='flex justify-center mt-6'>
+              <input className='px-6 py-2 w-fit rounded  text-[#E2E7E9] cursor-pointer hover:text-[#E2E7E9]/80 bg-[#6100c1]/80 uppercase text-xl font-semibold ' type='submit' value='register'></input>
+            </span>
+          </form>
         </div>
-        <Footerr />
+      </div>
+      <Footerr />
+      {/* Registration Successful Popup */}
+      {showPopup && (
+        <div className='fixed top-0 left-0 w-full h-full flex justify-center items-center bg-gray-800 bg-opacity-75'>
+          <div className='bg-white p-8 rounded-lg shadow-lg'>
+            <h2 className='text-xl font-semibold mb-4'>Registration Successful</h2>
+            <p>Your registration was successful. Thank you!</p>
+            <button onClick={() => setShowPopup(false)} className='mt-4 px-4 py-2 bg-[#6100c1]/80 text-white rounded-md hover:[#6100c1]'>Close</button>
+          </div>
+        </div>
+      )}
     </div>
-  )
-}
+  );
+};
 
 export default Register;

@@ -4,7 +4,7 @@ import Logo from '../assets/eden.png';
 import Footer from './Footerr';
 import { Link } from 'react-router-dom';
 import banner from '../assets/mnch11.png';
-import about from '../assets/mnch2.png';
+import about from '../assets/mnch133.png';
 import about2 from '../assets/mnch6.png';
 import about3 from '../assets/mnch5.png';
 import about4 from '../assets/mnch10.png';
