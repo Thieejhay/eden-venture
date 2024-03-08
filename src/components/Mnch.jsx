@@ -1,22 +1,23 @@
 import {React, useState} from 'react';
+// import { CarouselProvider, Slider, Slide, } from 'pure-react-carousel';
+// import 'pure-react-carousel/dist/react-carousel.es.css';
 import { HashLink } from 'react-router-hash-link';
 import Logo from '../assets/eden.png';
 import Footer from './Footerr';
 import { Link } from 'react-router-dom';
 import banner from '../assets/mnch11.png';
 import about from '../assets/mnch133.png';
-import about2 from '../assets/mnch6.png';
-import about3 from '../assets/mnch5.png';
+import about33 from '../assets/MAIN FLYER.png';
+import about34 from '../assets/TTS_ABUJA.png';
 import about4 from '../assets/mnch10.png';
 import {Swiper, SwiperSlide} from 'swiper/react';
-import { Pagination, Navigation } from 'swiper';
+import { Pagination, Navigation, Autoplay } from 'swiper';
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import {speakers} from './data1';
 import { IoIosArrowForward, IoIosArrowBack} from 'react-icons/io';
-import {FaClock, FaDownload} from 'react-icons/fa';
-import {TiLocation} from 'react-icons/ti';
+import { FaDownload} from 'react-icons/fa';
 import pat from '../assets/logo/logo1.png';
 import pat2 from '../assets/logo/logo2.png';
 import pat3 from '../assets/logo/logo3.png';
@@ -36,9 +37,9 @@ import pat13 from '../assets/logo/logo13.png';
 
 const Mnch = () => {
 
-  const [isHovered, setIsHovered] = useState(false);
+  
   const [isHovered2, setIsHovered2] = useState(false);
-  // const [isHovered3, setIsHovered3] = useState(false);
+  
   return (
     <div className='flex flex-col w-screen font-barlow overflow-clip'>
       <Link to='/'><div className='flex z-50 absolute lg:left-16 left-3 top-2 lg:top-6'><img className='lg:w-44 w-32 h-16 lg:h-20 opacity-90' alt='' src={Logo}></img></div></Link>
@@ -90,13 +91,16 @@ const Mnch = () => {
                 640: {slidesPerView: 3},
                 0: {slidesPerView: 2}
             }}
-            modules={[Pagination, Navigation]}
+            modules={[Pagination, Navigation, Autoplay]}
+            autoplay={{
+              delay: 3000, 
+              disableOnInteraction: false
+            }}
             navigation={{
                 nextEl: '.image-swiper-button-next',
                 prevEl: '.image-swiper-button-prev',
                 disabledClass: 'swiper-button-disabled'
             }}
-        
             slidesPerView={3}
             spaceBetween={10}
             loop={true} className='lg:w-[87%] w-[95%] lg:h-[28rem] h-[18rem] mySwiper'>
@@ -113,19 +117,20 @@ const Mnch = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
+            
+
             <div className=' cursor-pointer z-10 image-swiper-button-next flex items-center -mt-12 lg:mr-6'>
                 <IoIosArrowForward size={30} className='text-[#6100c1] lg:border-2 rounded-full p-1 border-[#6100c1]'/>
             </div>
-            
         </div>
       </div>
       <div className='flex flex-col items-center justify-center py-12 gap-5 bg-[#000000]/80'>
         <span className='px-4 py-2 uppercase w-fit rounded bg-[#6100c1] text-[#ffffff] text-base font-bold'>become a champion</span>
         <span className='text-xl font-semibold text-center text-[#E2E7E9] lg:w-[35rem]'>Join other brave MNCH champions and stakeholders at our upcoming summits in Lagos and Abuja</span>
       </div>
-      <div className='flex lg:py-10 py-5 px-4 lg:px-0 items-center justify-center '>
+      <div className='flex lg:py-10 py-5 px-4 lg:px-0 items-center bg-[#6100c1] justify-center '>
         <div className='flex lg:flex-row flex-col py-3 lg:gap-10 gap-5 z-50'>
-          <Link to='/lagos-submit'><span className={`flex lg:h-[22rem] h-[19rem] w-fit flex-col shadow-2xl py-5 lg:px-24 px-4 gap-4 lg:gap-6 rounded-md bg-white text-[#000000] relative transition duration-300 ${isHovered ? 'bg-opacity-95' : ''}`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+          {/* <span className={`flex lg:h-[22rem] h-[19rem] w-fit flex-col shadow-2xl py-5 lg:px-24 px-4 gap-4 lg:gap-6 rounded-md bg-white text-[#000000] relative transition duration-300 ${isHovered ? 'bg-opacity-95' : ''}`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
             <div className="absolute inset-0 bg-black opacity-0 transition duration-300 hover:opacity-50 hover:rounded-md"></div>
             <span className='absolute lg:left-0 right-0 bottom-[0.12rem]'><img src={about3} alt='' className='lg:h-80 h-52 opacity-30'></img></span>
             <span className='text-xl font-medium uppercase w-[20rem] tracking-wider'>Transforming together summit <span className='uppercase font-bold'>lagos</span></span>
@@ -140,8 +145,14 @@ const Mnch = () => {
             
             <span className='flex items-center py-1 rounded-md w-fit mt-6 font-semibold text-xl tracking-wider '>Click to register</span>
             </span>
+          </Link> */}
+          <Link to='/lagos-submit'>
+            <span className='flex shadow-2xl hover:opacity-80 transition duration-150 cursor-pointer lg:h-[30rem] h-[23rem] w-[20rem] lg:w-[25rem]'><img src={about33} alt='' className='w-full h-full'></img></span>
           </Link>
-          <Link to='/abuja-submit'><span className={`flex lg:h-[22rem] h-[20rem] w-fit flex-col shadow-2xl py-5 lg:px-24 px-4 gap-4 lg:gap-6 rounded-md bg-[#6100c1] text-white relative transition duration-300 ${isHovered ? 'bg-opacity-95' : ''}`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+          <Link to='/abuja-submit'>
+            <span className='flex shadow-2xl hover:opacity-80 transition duration-150 cursor-pointer lg:h-[30rem] h-[23rem] w-[20rem] lg:w-[25rem]'><img src={about34} alt='' className='w-full h-full'></img></span>
+          </Link>
+          {/* <Link to='/abuja-submit'><span className={`flex lg:h-[22rem] h-[20rem] w-fit flex-col shadow-2xl py-5 lg:px-24 px-4 gap-4 lg:gap-6 rounded-md bg-[#6100c1] text-white relative transition duration-300 ${isHovered ? 'bg-opacity-95' : ''}`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
             <div className="absolute inset-0 bg-black opacity-0 transition duration-300 hover:opacity-50 hover:rounded-md"></div>
             <span className='absolute -bottom-[0.12rem] -right-24 lg:-right-36'><img src={about2} alt='' className='lg:h-80 h-52 opacity-70'></img></span>
             <span className='text-xl font-medium uppercase w-[20rem] tracking-wider'>Transforming together summit <span className='uppercase font-bold'>Abuja</span></span>
@@ -155,7 +166,7 @@ const Mnch = () => {
             </span>
             <span className='flex items-center  py-1 rounded-md text-[#E2E7E9]/80 w-fit mt-2 font-bold text-xl tracking-wider'>Click to register</span>
             </span>
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div className='flex lg:px-24 px-4 py-3'>
@@ -167,7 +178,7 @@ const Mnch = () => {
                     <img src={pat} className='lg:w-20 w-12 h-12 lg:h-20' alt=''></img>
                   </span>
                   <span className='lg:w-28 lg:h-16 w-20 h-10 flex items-center justify-center'>
-                    <img src={pat2} className='lg:w-20 w-12 h-10 lg:h-16 mt-4' alt=''></img>
+                    <img src={pat2} className='lg:w-24 w-12 h-10 lg:h-16 ' alt=''></img>
                   </span>
                   <span className='lg:w-28 lg:h-16 w-20 h-10 flex items-center justify-center'>
                     <img src={pat4} className='lg:w-20 w-12 h-4 lg:h-6' alt=''></img>
@@ -199,7 +210,7 @@ const Mnch = () => {
                     <img src={pat12} className='lg:w-24 w-20 h-full' alt=''></img>
                   </span>
                   <span className='lg:w-28 lg:h-16 w-20 h-10 flex items-center justify-center'>
-                    <img src={pat13} className='lg:w-20 w-16 h-full' alt=''></img>
+                    <img src={pat13} className='lg:w-20 w-16 lg:h-12 h-10' alt=''></img>
                   </span>
                   <span className='lg:w-28 lg:h-16 w-20 h-10 flex items-center justify-center'>
                     <img src={pat7} className='w-full h-full' alt=''></img>

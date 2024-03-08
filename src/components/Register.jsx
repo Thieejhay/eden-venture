@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Logo from '../assets/eden.png';
 import Footerr from './Footerr';
+
 import { Link } from 'react-router-dom';
 import banner1 from '../assets/mnch12 copy.png';
 
@@ -39,7 +40,7 @@ const Register = () => {
         </span>
         <div className='lg:w-[65%] flex flex-col lg:p-12 p-4 '>
           <span className='flex flex-col gap-2'>
-            <span className='uppercase text-xl font-semibold'>registartion</span>
+            <span className='uppercase text-xl font-semibold'>registration</span>
             <hr className='w-full h-1 rounded bg-[#6100c1]/80'></hr>
           </span>
           <form onSubmit={sendEmail} ref={form}>
@@ -68,6 +69,8 @@ const Register = () => {
             </span>
           </form>
         </div>
+      </div>
+      <div>
       </div>
       <Footerr />
       {/* Registration Successful Popup */}

@@ -38,6 +38,8 @@ import Prof from '../assets/profile/Headshot.png';
 import Adedolapo from '../assets/profile/Adedolapo Fasawe.png';
 import Tola from '../assets/profile/Tola.png';
 import Rhoda from '../assets/profile/Rhoda Robinson.png';
+import Salako from '../assets/profile/Dr Salako.png';
+
 
 
 
@@ -322,37 +324,44 @@ export const speakers1 = [
 
 export const speakers2 = [
     {
-        id: 1,
+        id: 0,
         name: 'Dr. Bosede Bukola AFOLABI',
         title: 'Professor of Obstetrics and Gynaecology in the College of Medicine, University of Lagos.',
         img: Prof
 
     },
     {
-        id: 3,
+        id: 1,
         name: 'Dr. (Mrs) Adedolapo Fasawe',
         title: 'Mandate Secretary (Commissioner) of Health Services & Environment in the Federal Capital Territory Administration (FCTA), Abuja',
         img: Adedolapo
 
     },
     {
-        id: 0,
+        id: 2,
         name: 'Tade Alalade',
         title: 'Maternal Health Champion and Fertility advocate',
         img: Tade
 
     },
     {
-        id: 2,
+        id: 3,
         name: 'Rhoda Robinson',
         title: 'Co-founder of HACEY',
         img: Rhoda
 
     },
+    {
+        id: 4,
+        name: 'Dr Omolola Salako',
+        title: 'Award-winning cancer researcher and a Senior lecturer at the College of Medicine, University of Lagos',
+        img: Salako
+
+    },
     // {
-    //     id: 4,
+    //     id: 5,
     //     name: 'Falana',
-    //     title: 'performing artiste',
+    //     title: 'performing artiste2',
     //     img: Nabila
 
     // },

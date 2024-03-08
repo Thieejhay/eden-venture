@@ -7,9 +7,12 @@ import Wecreate from "./components/Wecreate";
 import Mnch from "./components/Mnch";
 import Abuja from "./components/Abuja";
 import Lagos from "./components/Lagos";
-import Register from "./components/Register";
+// import Register from "./components/Register";
 
-
+const RedirectToGoogleForm = () => {
+  window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSe8ZG-YVZD3Nk_FuD40v2TJ2dv0qxvqIY-62VsMJAC9mqRZvQ/viewform';
+  return null; // This component doesn't render anything
+};
 
 function App() {
   return (
@@ -34,7 +37,7 @@ function App() {
           <Lagos />
         </Route>
         <Route path='/register'>
-          <Register />
+          {RedirectToGoogleForm}
         </Route>
       </Switch>
     </Router>
