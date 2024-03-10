@@ -7,6 +7,7 @@ import Wecreate from "./components/Wecreate";
 import Mnch from "./components/Mnch";
 import Abuja from "./components/Abuja";
 import Lagos from "./components/Lagos";
+import Register2 from "./components/Register2";
 // import Register from "./components/Register";
 
 const RedirectToGoogleForm = () => {
@@ -30,14 +31,17 @@ function App() {
         <Route path='/mnch' >
           <Mnch />
         </Route>
-        <Route path='/abuja-submit'>
+        <Route path='/abuja-summit'>
           <Abuja />
         </Route>
-        <Route path='/Lagos-submit'>
+        <Route path='/Lagos-summit'>
           <Lagos />
         </Route>
         <Route path='/register'>
           {RedirectToGoogleForm}
+        </Route>
+        <Route path='/eden-register'>
+          <Register2 />
         </Route>
       </Switch>
     </Router>

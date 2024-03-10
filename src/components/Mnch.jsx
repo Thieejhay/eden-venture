@@ -129,7 +129,7 @@ const Mnch = () => {
         <span className='text-xl font-semibold text-center text-[#E2E7E9] lg:w-[35rem]'>Join other brave MNCH champions and stakeholders at our upcoming summits in Lagos and Abuja</span>
       </div>
       <div className='flex lg:py-10 py-5 px-4 lg:px-0 items-center bg-[#6100c1] justify-center '>
-        <div className='flex lg:flex-row flex-col py-3 lg:gap-10 gap-5 z-50'>
+        <div className='flex lg:flex-row flex-col py-3 lg:gap-32 gap-5 z-50'>
           {/* <span className={`flex lg:h-[22rem] h-[19rem] w-fit flex-col shadow-2xl py-5 lg:px-24 px-4 gap-4 lg:gap-6 rounded-md bg-white text-[#000000] relative transition duration-300 ${isHovered ? 'bg-opacity-95' : ''}`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
             <div className="absolute inset-0 bg-black opacity-0 transition duration-300 hover:opacity-50 hover:rounded-md"></div>
             <span className='absolute lg:left-0 right-0 bottom-[0.12rem]'><img src={about3} alt='' className='lg:h-80 h-52 opacity-30'></img></span>
@@ -146,11 +146,13 @@ const Mnch = () => {
             <span className='flex items-center py-1 rounded-md w-fit mt-6 font-semibold text-xl tracking-wider '>Click to register</span>
             </span>
           </Link> */}
-          <Link to='/lagos-submit'>
-            <span className='flex shadow-2xl hover:opacity-80 transition duration-150 cursor-pointer lg:h-[30rem] h-[23rem] w-[20rem] lg:w-[25rem]'><img src={about33} alt='' className='w-full h-full'></img></span>
+          <Link to='/lagos-summit'>
+            <span className='flex flex-col'><span className='flex shadow-2xl hover:opacity-80 transition duration-150 cursor-pointer lg:h-[30rem] h-[23rem] w-[20rem] lg:w-[29rem]'><img src={about33} alt='' className='w-full h-full'></img></span></span>
+            <span className='flex w-[20rem] lg:w-[29rem] justify-center items-center bg-[#E2E7E9] py-3 text-lg text-[#000000]/80'>Click to Register</span>
           </Link>
-          <Link to='/abuja-submit'>
-            <span className='flex shadow-2xl hover:opacity-80 transition duration-150 cursor-pointer lg:h-[30rem] h-[23rem] w-[20rem] lg:w-[25rem]'><img src={about34} alt='' className='w-full h-full'></img></span>
+          <Link to='/abuja-summit'>
+            <span className='flex shadow-2xl hover:opacity-80 transition duration-150 cursor-pointer lg:h-[30rem] h-[23rem] w-[20rem] lg:w-[29rem]'><img src={about34} alt='' className='w-full h-full'></img></span>
+            <span className='flex w-[20rem] lg:w-[29rem] justify-center items-center bg-[#E2E7E9] py-3 text-lg text-[#000000]/80'>Click to Register</span>
           </Link>
           {/* <Link to='/abuja-submit'><span className={`flex lg:h-[22rem] h-[20rem] w-fit flex-col shadow-2xl py-5 lg:px-24 px-4 gap-4 lg:gap-6 rounded-md bg-[#6100c1] text-white relative transition duration-300 ${isHovered ? 'bg-opacity-95' : ''}`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
             <div className="absolute inset-0 bg-black opacity-0 transition duration-300 hover:opacity-50 hover:rounded-md"></div>

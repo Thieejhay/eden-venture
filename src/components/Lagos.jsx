@@ -2,6 +2,7 @@ import {React, useEffect, useState, useRef } from 'react';
 import Logo from '../assets/eden.png';
 import banner from '../assets/mnch13.png';
 import banner1 from '../assets/55.png';
+import banner2 from '../assets/mnch2.png';
 // import abj from '../assets/mnch7.png';
 import { FaLinkedinIn,  FaInstagram, FaTwitter, FaYoutube, FaClock } from 'react-icons/fa';
 import {TiLocation} from 'react-icons/ti';
@@ -77,29 +78,25 @@ const Lagos = () => {
               </div>
             )} 
         </div>
-        <div className='flex lg:flex-row flex-col px-4 lg:px-4 lg:gap-6 gap-2 justify-center lg:py-10 py-5 bg-[#6100c1]/90'>
-          <span className='flex flex-col lg:w-[48rem] text-lg leading-6 text-[#6100c1]/90 gap-2 font-serif'>
-            <span className='px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'><span className='font-semibold '>9:00 am: </span> Arrival for event & registration</span>
-            <span className='px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'><span className='font-semibold '>10:00 am -  Breathwork Session - Oyinkan Talabi </span> </span>
-            <span className='px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'><span className='font-semibold '>10:20am - 10:30am: Welcome remarks by Fifehan Osikanlu</span>  </span>
-            <span className='px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'><span className='font-semibold '>10:30- 10:40 am: Keynote Speech:  Unlocking Hope, Revolutionising Maternal and Child Healthcare in Nigeria”  Dr Oliver Ezechi </span> - An overview of the current state, highlighting the challenges and triumphs related to MNCH women's sexual health and rights in Nigeria.</span>
-            <span className='px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'><span className='font-semibold '>10:45 am- 11:25: - Panel Discussion 1: "Policy Pathways: Reforming Maternal, Newborn, and Child Health in Nigeria"</span> -  Industry experts, activists, and healthcare professionals discuss systemic, cultural, and economic barriers women face in accessing proper MNCH care and also actionable steps to improve access to good medical infrastructure,  promotion and enforcement of a higher standard of Maternal and child healthcare in Nigeria. Speakers: <span className='font-semibold'>Dr Dolapo Fasawe, Dr Omolola Salako, Dr Bosede Afolabi, Moderator: Dewunmi Alugbin</span></span>
-            <span className='px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'><span className='font-semibold '>11:25 pm:</span>Refreshments and Break</span>
-            <span className='lg:flex hidden px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'><span className='font-semibold '>Vox pop style interviews with guests (10am-5pm)</span></span>
+        <div className='flex lg:flex-row flex-col px-4 lg:px-4 lg:gap-12 gap-4 justify-center lg:py-10 py-5 bg-[#6100c1]/90'>
+          <span className='flex flex-col lg:w-[42rem] text-lg leading-6 text-[#6100c1]/90 gap-2'>
+            <span className='px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>9:00 am: Arrival for event & registration </span>
+            <span className='px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>10:00 am-  Breathwork Session - Oyinkan Talabi </span>
+            <span className='px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>10:20am - 10:30am: Welcome remarks</span>
+            <span className='px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>10:45 am- 11:25: - Panel Discussion 1: "Policy Pathways: Reforming Maternal, Newborn, and Child Health in Nigeria" </span>
+            <span className='px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>11:25 pm: Refreshments and Break</span>
+            <span className='px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>12:15 pm - 12:35 pm: Deep Dive: "Nigeria's MNCH Landscape: Saving 2 million lives by 2030" by Dr Dolapo Fasawe</span>
+            <span className='lg:flex hidden px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>12: 40 pm- 1:30 - Panel Discussion- Social Impact x Innovation: Tackling Women’s Healthcare in Nigeria </span>
+            <span className='lg:flex hidden px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>1:35 pm: Music Performance by Falana</span>
+            <span className='lg:flex hidden px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>1.40 - 1:45 pm Call to Action</span>
+            <span className='lg:flex hidden px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>1:45 - 1:50 pm: Closing Remarks</span>
+            <span className='lg:flex hidden px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>2:00pm - 5pm: Networking & Medical Screenings</span>
+            <span className='lg:flex hidden px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>Medical Screenings (10am - 5pm)</span>
+            <span className='lg:flex hidden px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'>Vox pop style interviews with guests (10am-5pm)</span>
           </span>
-          <span className='flex flex-col lg:w-[48rem] text-lg leading-6 text-[#6100c1]/90 gap-2 font-serif'>
-            <span className='px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'><span className='font-semibold '>12:15 pm - 12:35 pm: Deep Dive: "Nigeria's MNCH Landscape: Saving 2 million lives by 2030" by Dr Dolapo Fasawe </span> – A deeper dive, expert overview of the current state, highlighting the challenges and triumphs related to MNCH, women's sexual health and rights and innovative pathways to crash the maternal & infant mortality rates in Nigeria. - Commissioner of Women’s Affairs Lagos State</span>
-            <span className='px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'><span className='font-semibold '>12: 40 pm- 1:30 - Panel Discussion- Social Impact x Innovation: Tackling Women’s Healthcare in Nigeria (Falana, Tade , Rhoda Robinson, Michael Kunnuji; moderator: Fifehan Osikanlu)</span> </span>
-            <span className='px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'><span className='font-semibold '>1:35 pm: Music Performance by: Falana</span> </span>
-            <span className='px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'><span className='font-semibold '>1.40 - 1:45 pm Call to Action by Dewunmi Alugbin:</span> Encouraging every high-level stakeholder or participant to commit to one action their organisation can engage in to improve women’s healthcare in Nigeria; particularly concerning pregnant women,  Mothers and newborns.</span>
-            <span className='px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'><span className='font-semibold '>1:45 - 1:50 pm: Closing Remarks:  by Fifehan Osikanlu </span></span>
-            <span className='px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'><span className='font-semibold '>2:00pm - 5pm:</span> Networking & Medical Screenings</span>
-            <span className='px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'><span className='font-semibold '>Medical Screenings (10am - 5pm)</span></span>
-            <span className='flex lg:hidden px-4 py-1 bg-[#E2E7E9] rounded-xl hover:bg-transparent hover:text-[#E2E7E9]/80 transition duration-300'><span className='font-semibold '>Vox pop style interviews with guests (10am-5pm)</span></span>
-          </span>
-          {/* <span className='lg:w-[24rem] w-fit lg:h-[28rem] lg:mt-12 bg-white rounded-md flex relative'>
+          <span className='lg:w-[24rem] w-fit lg:h-[28rem] lg:mt-12 bg-white rounded-md flex relative'>
             <img className='w-full h-full object-cover rounded-md' src={banner2} alt=''></img>
-          </span> */}
+          </span>
         </div>
         <div className='flex flex-col lg:pt-10 pt-5 items-center gap-5'>
           <span className='flex text-3xl font-semibold opacity-90 uppercase'>Our Speakers</span>
